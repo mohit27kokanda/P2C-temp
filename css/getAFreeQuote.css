@@ -1,0 +1,117 @@
+html, body{
+    height: 100%;
+    background-color: #ffffff;
+}
+.theme-color{
+    color: #f1a69a;
+}
+
+.side-bar-border{
+    border-top: 1px solid #e8715f;
+    right: 10%;
+}
+
+@media only screen and (max-device-width: 375px){
+    header .close{
+        margin-right: 0;
+    }
+}
+
+/**********side bar wiht numbe in back and text in front**********/
+.container-side-bar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.quote-question{
+    position: absolute;
+    font-family: AvertaStd;
+    font-size: 18px;
+    font-weight: 800;
+    color: #000;
+}
+.back-number{
+    font-size: 15vh;
+    font-family: AvertaStd;
+    font-weight: 800;
+}
+
+.back-number-color{
+    color: #eaeaea;
+}
+/************************xxxxxxxxxx*************************/
+
+.labels{
+    color: #bbb7b7;
+    font-size: 0.8rem;
+}
+
+.business-it-support-heading{    
+    color: #bbb7b7;
+}
+
+.input100 {
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-size: 1rem;
+    color: #333333;
+    border: none;
+    outline: none;
+}  
+
+.bottom-border{
+    border-bottom: 2px solid #d8d6d6;
+}
+
+.warning-text{
+    font-size:0.8rem; 
+    visibility: hidden;
+}
+
+/**************** checkbox formatting***************/
+.checkbox-border{
+    box-shadow: 0px 0px 5px 5px #3d3a3a;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+
+.img-contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.checkbox-text{
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #7e7a7a;
+    opacity: 0.8;
+}
+
+.checkbox-ele{
+    cursor: pointer;
+}
+/****************xxxxxxxxxxxxxxxxxxxxxx****************/
+
+#budget, #start-time, #country{
+    border: none;
+    outline: none;
+    background-color: #f5f0f0;
+}
+
+
+.submit{
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0px 0px 5px 5px #e8715f;
+}
+
+.submit:hover{
+    background-color:transparent;
+}
+

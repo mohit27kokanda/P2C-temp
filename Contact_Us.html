@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+
+<link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style_contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <style>
+     .navbar-toggler {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  outline: none !important;
+}
+.navbar-toggler-icon {
+  font-weight: 300 !important;
+  color: #e96b56;
+  /* height: 1px !important; */
+  margin: 5px 0px !important;
+}
+.navbar-toggler-icon-cross {
+  color: #e96b56;
+  /* font-size: 50px !important; */
+  font-weight: 100 !important;
+  margin: 5px 10px !important;
+  display: none !important;
+}
+.remove-display-none {
+  display: block !important;
+}
+  </style>
+
+        
+  </head>
+  <body>
+    <div class="full-div-color">
+    <nav class="navbar navbar-expand-lg">
+      <div class="logo">
+          <a href="index.html" class="navbar-brand h1"><img class="mr-2 logo-image show" src="img/quote.png"><img class="mr-2 logo-image show-hover" src="image/Artboard 2@4x.png">
+              <strong class="full-logo " style="color: black;">Power<span>2</span>Create</strong>
+          </a>
+          
+      </div>
+      <button class="navbar-toggler open-close-button" onclick="toggl()" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="navbar-toggler-icon navbar-toggler-icon-line fas fa-align-right fa-2x "></i></span>
+        <span><i class="navbar-toggler-icon-cross fas fa-times fa-2x "></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="button-div navbar-nav">
+              <li class="nav-btn nav-item ">
+                  <strong><a class="nav-color-item" href="company.html" style="color:black;">Company</a></strong>
+  
+              </li>
+  
+              <li class="nav-btn nav-item " onclick=""><strong><a class="nav-color-item" href="Service_Intro.html" style="color: black;">Services</a></strong>
+  
+              </li>
+              <li class="nav-btn nav-item " onclick=""><strong><a class="nav-color-item" href="Blog.html" style="color: black;" >Blogs</a></strong></li>
+              <li class="nav-btn nav-item " onclick=""><strong><a class="nav-color-item" href="Contact_Us.html" style="color:black;" rgb(153, 96, 96);">Contact Us</a></strong></li>
+              <li class="button_slide slide_right nav-item "><strong><a class="nav-color-item" href="freeQuote.html" style="color: black;">Get a Free Quote</a></strong></li>
+              </ul>
+          </div>
+  
+      
+  </nav>
+</div>
+
+<div class="contact-section">
+
+  
+
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-none rounded" style="margin-top: -20px;">
+    <a class="navbar-brand" href="index.html" style="margin-left: 5%;">
+      <img src="css/Images/logo1.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    Power2Create
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:black; font-size: 30px; transform: scaleX(1.3);"></i></span>
+  </button>
+  
+    <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample02">
+      <ul class="navbar-nav hero">
+        <li class="nav-item">
+          <a class="nav-link" href="company.html" style="font-family: 'Ubuntu', sans-serif;">Company</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Service_Intro.html" style="font-family: 'Ubuntu', sans-serif;">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Blog.html" style="font-family: 'Ubuntu', sans-serif;">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact_Us.html" style="font-family: 'Ubuntu', sans-serif;">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link button glow-button" href="freeQuote.html" style="font-family: 'Ubuntu', sans-serif;">Get A Free Quote</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+
+  <h1 id="contact" style="margin-top: 40px;">Contact Us</h1>
+  <div class="border" id="border"></div>
+  <form class="contact-form" action="index.html" method="post">
+    <input type="text" class="contact-form-text" placeholder="Your name" id="name">
+    <input type="email" class="contact-form-text" placeholder="Your email" id="mail">
+    <input type="text" class="contact-form-text" placeholder="Write Your Subject" id="subject">
+    <textarea class="contact-form-text" placeholder="Your message" id="message"></textarea>
+    <input type="submit" class="contact-form-btn" value="Send" id="button">
+  </form>
+</div>
+
+<iframe style="border:0; width: 100%; height: 270px;" id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.3844904124403!2d77.20510771484834!3d28.678142982399798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd9a6ff52e13%3A0xd04d3a4d76c39631!2sLibrary%20-%20Power2Learn!5e0!3m2!1sen!2sbg!4v1589006002074!5m2!1sen!2sbg"
+            frameborder="0" allowfullscreen>
+            </iframe>
+      
+<div class="contact-info" style="margin: 0 auto;" id="info">
+    <div class="card">
+      <a href="https://accounts.google.com/ServiceLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&osid=1&service=mail&ss=1&ltmpl=default&rm=false&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><i class="card-icon far fa-envelope" style="color: white;"></i></a>
+      <p>sales@power2create.in</p>
+    </div>
+
+    <div class="card">
+      <i class="card-icon fas fa-phone"></i>
+      <p>+91 9311-465-556<br>
+        +91 9311-986-663
+      </p>
+    </div>
+
+    <div class="card">
+      <a href="https://www.google.com/maps?ll=28.678143,77.207296&z=15&t=m&hl=en&gl=BG&mapclient=embed&cid=15009717237475153457" target="_blank"><i class="card-icon fas fa-map-marker-alt" style="color: white;"></i></a>
+      <p>12B, 2nd Floor, Malkaganj<br>
+        New Delhi, Delhi 110007<br>
+        India</p></a>
+    </div>
+  </div>
+
+  <div id="footer" class="my-5">
+        
+  </div>
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="footer.js"></script>
+
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $(window).scroll(function(){
+                        var positiontop = $(document).scrollTop();
+                        console.log(positiontop);
+    
+                        if((positiontop>0) && (positiontop<6)){
+                            $('#contact').addClass('animated bounceInRight');
+                        }
+    
+                        if((positiontop>0) && (positiontop<6)){
+                            $('#name').addClass('animated bounceInLeft');
+                        }
+    
+                        if((positiontop>0) && (positiontop<6)){
+                            $('#mail').addClass('animated bounceInRight');
+                        }
+    
+                        if((positiontop>0) && (positiontop<6)){
+                            $('#subject').addClass('animated bounceInLeft');
+                        }
+
+                        if((positiontop>0) && (positiontop<6)){
+                            $('#message').addClass('animated bounceInRight');
+                        }
+
+                        if((positiontop>0) && (positiontop<6)){
+                            $('#button').addClass('animated bounceInLeft');
+                        }
+
+                        if((positiontop>39) && (positiontop<100)){
+                            $('#map').addClass('animated bounceInRight');
+                        }
+
+                        if((positiontop>363) && (positiontop<568)){
+                            $('#info').addClass('animated bounceInLeft');
+                        }
+    
+    
+                    });
+                });
+    
+            
+            </script>
+ <script src="navBg.js"></script>
+ <script src="C2.js"></script>
+
+  </body>
+</html>

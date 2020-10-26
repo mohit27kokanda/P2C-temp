@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style-business-services.css">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<title>Business Services</title>
+<style>
+  .navbar-toggler {
+position: absolute;
+top: 10px;
+right: 10px;
+outline: none !important;
+}
+.navbar-toggler-icon {
+font-weight: 300 !important;
+color: #e96b56;
+/* height: 1px !important; */
+margin: 5px 0px !important;
+}
+.navbar-toggler-icon-cross {
+color: #e96b56;
+/* font-size: 50px !important; */
+font-weight: 100 !important;
+margin: 5px 10px !important;
+display: none !important;
+}
+.remove-display-none {
+display: block !important;
+}
+</style>
+</head>
+<body>
+
+  <div class="banner-business-service">
+    <div class="back-bg-color-business full-div-color">
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="logo">
+            <a href="index.html" class="navbar-brand h1"><img style="width: 40px; height:40px" class="mr-2 logo-image show" src="css/Images/logo0.png"><img style="width: 40px; height:40px" class="mr-2 logo-image show-hover" src="css/Images/logo0.png">
+                <strong class="full-logo " style="color: white;">Power<span>2</span>Create</strong>
+            </a>
+            
+        </div>
+        <button class="navbar-toggler open-close-button" onclick="toggl()" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="navbar-toggler-icon navbar-toggler-icon-line fas fa-align-right fa-2x "></i></span>
+          <span><i class="navbar-toggler-icon-cross fas fa-times fa-2x "></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="mobile-view-ul button-div navbar-nav">
+                <li class="mobile-view-li nav-btn nav-item ">
+                    <strong><a class="nav-color-item" href="company.html" style="color: white;">Company</a></strong>
+
+                </li>
+
+                <li class="mobile-view-li nav-btn nav-item " onclick=""><strong><a class="nav-color-item" href="Service_Intro.html" style="color: white;">Services</a></strong>
+
+                </li>
+                <li class="mobile-view-li nav-btn nav-item " onclick=""><strong><a class="nav-color-item" href="Blog.html" style="color: white;" >Blogs</a></strong></li>
+                <li class="mobile-view-li nav-btn nav-item " onclick=""><strong><a class="nav-color-item" href="Contact_Us.html" style="color: white;">Contact Us</a></strong></li>
+                <li class="mobile-view-li mobile-button_slide slide_right nav-item "><strong><a class="nav-color-item" href="freeQuote.html" style="color: black; box-shadow: inset -30px 0 0 0 white;">Get a Free Quote</a></strong></li>
+</ul>
+            </div>
+</nav>
+        </div>
+   
+
+
+
+
+
+      <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-none rounded pt-3">
+        <div class="logo" st>
+          <a  href="https://mohit27kokanda.github.io/p2c_landingpage/" class="navbar-brand h1"><img style="margin-top: 50px; margin-left: 10px; width: 40px; height: 40px;" class="mr-2 logo-image show-hover" src="css/Images/logo0.png">
+              <strong style="color: white;  " class="full-logo">Power<span>2</span>Create</strong>
+          </a>
+         
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff; font-size: 30px; transform: scaleX(1.3);"></i></span>
+      </button>
+      
+        <div class="collapse navbar-collapse justify-content-md-center rounded" id="navbarsExample02">
+          <ul style="margin-right: -300px; margin-top: 50px; font-weight: 500;  font-size: 1.1rem;" class="navbar-nav hero">
+            <li class="nav-item">
+              <a style="font-weight: 500;  font-size: 1.1rem;" class="nav-link" href="company.html" style="font-family: 'Ubuntu', sans-serif;">Company</a>
+            </li>
+            <li class="nav-item">
+              <a style="font-weight: 500;  font-size: 1.1rem;" class="nav-link" href="Service_Intro.html" style="font-family: 'Ubuntu', sans-serif;">Service</a>
+            </li>
+            <li class="nav-item ">
+              <a style="font-weight: 500;  font-size: 1.1rem;" class="nav-link" href="Blog.html" style="font-family: 'Ubuntu', sans-serif;">Blogs</a>
+            </li>
+            <li class="nav-item" >
+              <a style="font-weight: 500;  font-size: 1.1rem;" class="nav-link" href="Contact_Us.html" style="font-family: 'Ubuntu', sans-serif;">Contact Us</a>
+            </li>
+            <li class="nav-item" >
+              <a style="font-weight: 500;  font-size: 1.1rem; background-color: transparent;  border: none;" class="nav-link btn btn-outline-light" href="freeQuote.html" style="font-family: 'Ubuntu', sans-serif;">Get A Free Quote</a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+
+
+		<div class="sign">
+      <div class="mobile-first-text" style="color: #e6e6ff; text-align: center; font-size: 30px; margin-top: 190px;">
+      <a class="n1" href="index.html">Home</a> | <a class="n2" href="Service_Intro.html">Service</a></div>
+		<span class="banner-business-service-text">Business Services</span>
+  </div>
+  </div>
+<div>
+    <nav style="margin-left: 70px; height: 40px;" class="mobile-view navbar sticky-top navbar-expand-lg bg-white py-0">
+      <div class="collapse navbar-collapse" id="navbarNavX">
+  
+        <ul class="navbar-nav  nav-fill w-100 flex-row my-3">
+          <li class="nav-item" style="border-right:1px solid;">
+            <a class="nav-link-btn-company-bottom-nav" href="#idea">Idea Identification and Assesment</a>
+          </li>
+          <li class="nav-item active" style="border-right:1px solid;">
+            <a class="nav-link-btn-company-bottom-nav" href="#building">Building a Legal Foundation</a>
+          </li>
+          <li class="nav-item active" style="border-right:1px solid;">
+            <a class="nav-link-btn-company-bottom-nav" href="#financial">Understanding Financial Basis</a>
+          </li>
+          <li class="nav-item active" style="border-right:1px solid;">
+              <a class="nav-link-btn-company-bottom-nav" href="business">Business Planning and Modelling</a>
+            </li>
+            <li class="nav-item active" style="border-right:1px solid;">
+              <a class="nav-link-btn-company-bottom-nav" href="#fund">Fund Raising and Valuation</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link-btn-company-bottom-nav" href="#pitching">Pitching and Term Sheet</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+<div class="bgimg-1">
+  <div class="h1 text-center theme-color my-0" style="padding-top: 7rem; padding-bottom: 7rem;" id="idea">
+  <span class="border-business">Idea Identification and Assessment</span>
+  </div>
+</div>
+
+<div class="text-1">
+  <h3 class="theme-color text-center">Discovery Of Idea, Needs Assessment - Map Ideas To Problem, To Find Resolution</h3>
+
+  <p>We work with new ventures on site and our expert record consumers’ needs, problem and identify how is it turned into business idea, basically how this business is born on different parameters to fill the need gaps and to solve the consumers problem.</p>
+  <p>After validating your idea, our team do analysis on different factors to understand whether this problem is major one for your potential customer or not to come up to conclusion that consumer might use your product and will pay it for or not.</p>
+  <p>With given amount of competitions under your nature of business our core team help in identify your core target segment to enhance your product or service offering and enable you to figure out the plan and course of action for your marketing and sales spends.</p>
+  <p>Once done with market segmentation based on geographic, demographics and behavioural traits with our strong analysis tools we help ventures to arrive at the value proposition of your product or service and customer willingness to pay.</p>
+  <p>Our goal to guide ventures and establish their idea in particular segment with Top down and bottom up approach to access the size and growth of the appropriate market segment.</p>
+  <p>Post market segment identification analysing environment and competitive advantage through Porters 5 force model – Threat of entry, buyer power, supplier power, threat of substitute, and competitive rivalry to clear your plan of action for industry you want to operate.</p>  
+  <p>With our systematic approach of analysis we differentiate the performance of your new ventures to ensure both the survival and create an ability to stay ahead of the present or potential competitions and ensures market leadership.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="h1 text-center theme-color my-0" style="padding-top: 7rem; padding-bottom: 7rem;" id="building">
+  <span class="border-business">Building a Legal Foundation</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div class="text-2">
+    <h3 class="theme-color text-center">It Is Prudent To Be Aware Of Legal Matters Of Your Business From Its Beginning</h3>
+    
+    <p>As a start-up you invest your every minutes in growth and related activities, and this, legal matters of the business often get ignored. This leads to common legal mistakes that impact your company’s success or failures in the long -run.</p>
+    <p>Don’t worry we are with you with our expert legal counsel support to your new ventures from day first to help you to avoid legal mistakes that impact your company’s success or failure in the long – run from the start.</p>
+    <p>Our legal team guide and fulfil the all legal paper work aspects for establishing your entity like, common legal mistakes, types of legal structures suits your new ventures, entity registration process, choose a base location, client location, skilled employee base, need foreign set up, permits according to your business, tax registration, compliance, Intellectual property right (IP – trademark, copyright, patent and design) – investors prospective and preparing various legal contracts (founder and employee agreements, vendor and customer contracts).</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="h1 text-center theme-color my-0" style="padding-top: 7rem; padding-bottom: 7rem;" id="financial">
+  <span class="border-business">Understanding Financial Basics</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div class="text-1">
+  <h3 class="theme-color text-center">Keep Clarity Of Finances - To Communicate The Success Of Your Business</h3>
+  
+  <p>For new ventures the financial basics understanding play a vital role for owner for better understanding and clarity in order to communicate the success of their venture to potential stakeholders.</p>
+  <p>Our expert and professional Charted accountant help new ventures in creating and learning various basics financial key aspects of their business for better clarity over finances.</p>
+  <p>We support in creating and providing learning of financial statement (Income statement, balance sheet, cash flow statement), help in building robust Management information system (MIS) – budget v/s actual, unit metrics, KPIs (key performance parameters) – Booking versus revenue, GMV v/s revenue, gross profit, lifetime value, customer acquisition cost, average revenue per user, conversion rate and cohort analysis.</p>
+  <p>Apart from above services we create more deep insight reports over company’s working capital management culture, financial management and long term investments and build their capital structure and taxation dashboard to analyse business health at every stage.</p>
+  <p>We create robust financial structure and provide the learning to new ventures team members to follow the steps to maintain the financial figures for better clarity over business at each steps on daily, monthly, quarterly and yearly basis.</p>
+  </div>
+</div>
+
+<div class="bgimg-4">
+  <div class="h1 text-center theme-color my-0" style="padding-top: 7rem; padding-bottom: 7rem;" id="business">
+  <span class="border-business">Business Planning & Modelling</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div class="text-2">
+    <h3 class="theme-color text-center">Create A Business Plan To Reflect The Vision Of Your Entrepreneurial Journey</h3>
+    
+    <p>Being new ventures common business plan myth among entrepreneur are “ Why do I need a business plan – It’s all there in my head”, “Business plans are for big companies that hire MBA’s, I am a very small company”, “ I don’t have time to write any plan as I am too busy trying to get new customers & paying bills”, “ In any case who reads a business plan?”,” Have all successful entrepreneurs written one?”.</p>
+    <p>All above myth are right and required by every entrepreneurs either business is small or medium or big, if you don’t know the direction, how will you ever reach the destination? – hence its required.</p>
+    <p>We strongly work over creating a descriptive deck that lays out the future map for communicating your vision for your venture and how will you achieve it, for yourself and for other internal/external stakeholders to raise capital and to communicate your business structure and informational flow.</p>
+    <p>So, don’t bush around business plan requirements myth, create your path/vision with help of our professional team to communicate your clear vision and goal, company description, industry analysis, competitive analysis, management team, operational plan, marketing plan, financial plan, risks and contingencies.</p>
+    <p>Our team help ventures in creating B- Plan in simple language, concise & crisp with the help of charts, tables and graphics effectively into logical segments to visualize your business dream over deck.</p>
+  </div>
+</div>
+
+<div class="bgimg-5">
+  <div class="h1 text-center theme-color my-0" style="padding-top: 7rem; padding-bottom: 7rem;"id="fund">
+  <span class="border-business">Fund Raising & Valuation</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div class="text-1">
+  <h3 class="theme-color text-center">Create Fund Usage Strategy To Spark Your Idea With Funding Fuel To Soar High</h3>
+  
+  <p>After support from our team in respects to financial points creation associated with running your business and creating your business plan for the same, we prepare and provide the core guidance in understanding funding process and stages.</p>
+  <p>We support from scratch level to give you structured outlook on the funding process to get funding in a clear and convincing manner.</p>
+  <p>Rather then to support on you “how” of funding in early stage, it is prudent for us to aware with and to support with to take a step back and let you understand and help you with the “when” , “what” & “why” of funding – I ‘mean when should you seek external funding.</p>
+  <p>So, be clear funding is not a one step process is all you get funding as you progress with different stages of your entrepreneurial journey.</p>
+  <p>We help and guide new ventures and their business journey step by step for getting into different stage of funding like bootstrapping, angel investing, seed funding, series A round and series B-D and beyond to grow you business.</p>
+  </div>
+</div>
+
+<div class="bgimg-6">
+  <div class="h1 text-center theme-color my-0" style="padding-top: 7rem; padding-bottom: 7rem;"id="pitching">
+  <span class="border-business">Pitching & Term Sheet</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div class="text-2">
+    <h3 class="theme-color text-center">Create The Right Pitch For Investors To Give Your Business Idea Wings</h3>
+    
+    <p>After support from our team in respects to financial points creation associated with running your business and creating your business plan for the same, we prepare and provide the core guidance in understanding funding process and stages.</p>
+    <p>We support from scratch level to give you structured outlook on the funding process to get funding in a clear and convincing manner.</p>
+    <p>Rather then to support on you “how” of funding in early stage, it is prudent for us to aware with and to support with to take a step back and let you understand and help you with the “when” , “what” & “why” of funding – I ‘mean when should you seek external funding.</p>
+    <p>So, be clear funding is not a one step process is all you get funding as you progress with different stages of your entrepreneurial journey.</p>
+    <p>We help and guide new ventures and their business journey step by step for getting into different stage of funding like bootstrapping, angel investing, seed funding, series A round and series B-D and beyond to grow you business.</p>
+  </div>
+</div>
+</div>
+
+
+<div id="footer" class="my-5">
+        
+</div>
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="./footer.js"></script>
+<script src="navBg.js"></script>
+<script src="C2.js"></script>
+</body>
+</html>

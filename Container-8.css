@@ -1,0 +1,98 @@
+.C8-bigger-container{
+    margin-top: 80px;
+    background-color: rgb(240,244,244);
+}
+.C8-content-div{
+    /* border: 1px solid black;
+   
+   text-align: center;
+   padding: 15px; */
+   padding: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+    background: #fff;
+    text-align: justify;
+
+}
+.C8-Heading-Div{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.C8-Main_heading{
+    text-align: center;
+    font-size: 30px;
+   padding-top: 50px;
+      font-weight: bold;
+      font-family:"Poppins", sans-serif;
+      height: 120px;
+      
+}
+.C8-Heading-Div h1::after
+{
+  content: ' ';
+  position: absolute;
+  margin-top: 20px;
+  /* top: -10px; */
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #e96b56;
+  align-self: center;
+  left: calc(50% - 25px);
+
+}
+.C8-Sub-heading{
+    text-align: center;
+}
+
+
+.C8-box-heading{
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #334242;
+    line-height: 1.2;
+}
+.C8-Box-detail{
+    display: block;
+    font-size: 16px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+    font-weight: normal;
+    text-align: center !important;
+    line-height: 1.8;
+    color: black;
+}
+.last-button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.C8-last-button{
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    color: #e96b56;
+    border:2px solid #e96b56;
+    font-weight: 500;
+    background-color: white;
+
+}
+.C8-last-button:hover{
+    background-color: #e96b56;
+    color: white;
+
+}

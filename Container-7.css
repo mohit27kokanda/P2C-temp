@@ -1,0 +1,102 @@
+.C7-Heading-Div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.C7-Main_heading {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  height: 120px;
+}
+.C7-Heading-Div h1::after {
+  content: " ";
+  position: absolute;
+  margin-top: 20px;
+  /* top: -10px; */
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #e96b56;
+  align-self: center;
+  left: calc(50% - 25px);
+}
+.C7-contant {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+
+  border-radius: 0.25rem;
+  text-align: center;
+}
+.C7img {
+  height: 250px;
+}
+
+.c7-box-heading {
+  margin-top: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-self: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #334242;
+  transition: 0.3s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.C7-box-detail {
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center !important;
+}
+.blog-button {
+  display: flex;
+  text-anchor: none;
+  text-decoration: none;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  width: 120px;
+  height: 40px;
+
+  border-radius: 3px;
+}
+
+.C7-button {
+  text-align: center;
+  display: flex;
+  width: 120px;
+  height: 40px;
+  text-decoration: none;
+  border-radius: 3px;
+
+  justify-self: center;
+  align-self: center;
+}
+.C7-button-text {
+  text-anchor: none;
+  margin-left: 20px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  text-align: center !important;
+  font-size: 15px;
+}

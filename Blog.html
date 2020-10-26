@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- CSS only -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href = "css/style_blog.css" type = "text/css" rel = "stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+      .navbar-toggler {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   outline: none !important;
+ }
+ .navbar-toggler-icon {
+   font-weight: 300 !important;
+   color: #e96b56;
+   /* height: 1px !important; */
+   margin: 5px 0px !important;
+ }
+ .navbar-toggler-icon-cross {
+   color: #e96b56;
+   /* font-size: 50px !important; */
+   font-weight: 100 !important;
+   margin: 5px 10px !important;
+   display: none !important;
+ }
+ .remove-display-none {
+   display: block !important;
+ }
+   </style>
+  </head>
+<body>
+
+  
+
+  <div class="bgimg-blog">
+    <div class="back-bg-color">
+      <div class="container-fluid back-banner p-0">
+        <div class="back-bg-color-business full-div-color">
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="logo">
+            <a href="index.html" class="navbar-brand h1"><img style="width: 40px; height:40px" class="mr-2 logo-image show" src="css/Images/logo0.png"><img style="width: 40px; height:40px" class="mr-2 logo-image show-hover" src="css/Images/logo0.png">
+                <strong class="full-logo " style="color: white;">Power<span>2</span>Create</strong>
+            </a>
+            
+        </div>
+        <button class="navbar-toggler open-close-button" onclick="toggl()" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="navbar-toggler-icon navbar-toggler-icon-line fas fa-align-right fa-2x "></i></span>
+          <span><i class="navbar-toggler-icon-cross fas fa-times fa-2x "></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="mobile-view-ul button-div navbar-nav">
+                <li class="mobile-view-li nav-btn nav-item ">
+                    <strong><a class="nav-color-item" href="company.html" style="color: white;">Company</a></strong>
+
+                </li>
+
+                <li class="mobile-view-li nav-btn nav-item " onclick=""><strong><a class="nav-color-item" href="Service_Intro.html" style="color: white;">Services</a></strong>
+
+                </li>
+                <li class="mobile-view-li nav-btn nav-item " onclick=""><strong><a class="nav-color-item" href="Blog.html" style="color: white;" >Blogs</a></strong></li>
+                <li class="mobile-view-li nav-btn nav-item " onclick=""><strong><a class="nav-color-item" href="Contact_Us.html" style="color: white;">Contact Us</a></strong></li>
+                <li class="mobile-view-li mobile-button_slide slide_right nav-item "><strong><a class="nav-color-item" href="freeQuote.html" style="color: black; box-shadow: inset -30px 0 0 0 white;">Get a Free Quote</a></strong></li>
+</ul>
+            </div>
+</nav>
+        </div>
+      
+
+
+      <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-none rounded pt-3">
+        <a class="navbar-brand" href="index.html" style="margin-left: 5%;">
+            <img src="css/Images/logo0.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          Power2Create
+          </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff; font-size: 30px;  transform: scaleX(1.3);"></i></span>
+      </button>
+      
+        <div class="collapse navbar-collapse justify-content-md-center rounded" id="navbarsExample02">
+          <ul class="navbar-nav hero">
+            <li class="nav-item">
+              <a class="nav-link" href="company.html" style="font-family: 'Ubuntu', sans-serif;">Company</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Service_Intro.html" style="font-family: 'Ubuntu', sans-serif;">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html" style="font-family: 'Ubuntu', sans-serif;">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact_Us.html" style="font-family: 'Ubuntu', sans-serif;">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-light" href="freeQuote.html" style="font-family: 'Ubuntu', sans-serif;">Get A Free Quote</a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+
+      <div  style="color: #e6e6ff; text-align: center; font-size: 30px; margin-top: 190px;">
+        <a class="n1" href="index.html">Home</a> | <a class="n2" href="#">Blog</a></div>
+
+      <div class="caption" style="margin-top: 20px;">
+        <div class="blog-banner-text">Blogs</div>
+      </div>
+      </div>
+  </div>
+      </div>
+ 
+
+  <div class="conatiner0 A1" style="margin-left: 11.5%;">
+    <div class="row main-row">
+        <div class="col-md-4 mb-5">
+            <div class="card p-3" style="width: 18rem">
+              <a href="#jobsVsEnterpreneurship"><img src="css/Images/blog1.0.jpg" alt="" class="card-img-top shadow bg-white rounded"></a>
+            <h4>Job VS Entrepreneurship</h4>
+            <div class="card-body">
+                <h5 class="card-title">Job VS Entrepreneurship</h5>
+                <p class="card-text">Imagine a herd of sheep following their leader without any knowledge of which direction they are being led to? Rather, just following the leader blindfolded...</p>
+                <button type="button" class="btn btn-outline-dark"><a href="#jobsVsEnterpreneurship">Read More</a></button>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 mb-5">
+            <div class="card p-3" style="width: 18rem">
+              <a href="#womenentrepreneurship"><img src="css/Images/blog2.0.jpg" alt="" class="card-img-top shadow bg-white rounded"></a>
+            <h4>Women Entrepreneurship</h4>
+            <div class="card-body">
+                <h5 class="card-title">Women Entrepreneurship</h5>
+                <p class="card-text">Do you know who laid the foundation of one of the major pharmaceutical companies who is playing an extremely vital role in this corona virus pandemic? Yes, you guessed it right-its Kiran Mazumdar Shah, the founder of Biocon ..</p>
+                <button type="button" class="btn btn-outline-dark"><a href="#womenentrepreneurship">Read More</a></button>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 mb-5">
+            <div class="card p-3" style="width: 18rem">
+              <a href="#businessincubator"><img src="css/Images/blog3.jpg" alt="" class="card-img-top shadow bg-white rounded"></a>
+            <h4>Business Incubator Support</h4>
+            <div class="card-body">
+                <h5 class="card-title">Business Incubator Support</h5>
+                <p class="card-text">Imagine the cricket team of India leaving for West Indies for a test series. All the match winning players with their exceptional cricketing skills are set to show their best performance....</p>
+                <button type="button" class="btn btn-outline-dark"><a href="#businessincubator">Read More</a></button>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 mb-5">
+            <div class="card p-3" style="width: 18rem">
+              <a href="#entrepreneurshipvsworld"><img src="css/Images/blog4.jpg" alt="" class="card-img-top shadow bg-white rounded"></a>
+            <h4>Entrepreneurship VS The World</h4>
+            <div class="card-body">
+                <h5 class="card-title">Entrepreneurship VS The World</h5>
+                <p class="card-text">Have you ever visited a river rafting site? Well in case you have, then you might be pretty aware of the scenario there- Some people out there can’t wait to get on the raft and ride through the river of uncertainties, twists and turns, and risks...</p>
+                <button type="button" class="btn btn-outline-dark"><a href="#entrepreneurshipvsworld">Read More</a></button>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 mb-5">
+            <div class="card p-3" style="width: 18rem">
+              <a href="#relationship"><img src="css/Images/blog5.jpg" alt="" class="card-img-top shadow bg-white rounded"></a>
+            <h4>Relationship Of Technology And Entrepreneurs</h4>
+            <div class="card-body">
+                <h5 class="card-title">Relationship Of Technology And Entrepreneurs</h5>
+                <p class="card-text">Can you think of a Microsoft without William Henry gates, popularly known as Bill Gates, or Facebook without Mark Zuckerberg, or Google without Larry page, or Amazon without Jeff Bezos? – I guess not...</p>
+                <button type="button" class="btn btn-outline-dark"><a href="#relationship">Read More</a></button>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 mb-5">
+            <div class="card p-3" style="width: 18rem">
+              <a href="#rightselection"><img src="css/Images/blog6.jpg" alt="" class="card-img-top shadow bg-white rounded"></a>
+            <h4>Right Selection of Technology and Business Support</h4>
+            <div class="card-body">
+                <h5 class="card-title">Right Selection of Technology and Business Support</h5>
+                <p class="card-text">Can you imagine diving into an ocean without any oxygen cylinder or life jacket and other necessary equipment needed to survive? And even if you dive in, for how long will you be able to survive? 2 minutes, 5 minutes, 10 minutes? And then what after?...</p>
+                <button type="button" class="btn btn-outline-dark"><a href="#rightselection">Read More</a></button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+  
+  <div class="container">
+		<div class="row">
+		  <div class="col">
+        <!------------------------ blog heading--------------------->
+        <div class="row"  id="jobsVsEnterpreneurship">
+            <div class="col-12">
+                <div class="h2 my-5 text-center">Job vs Entrepreneurship</div>
+            </div>
+        </div>
+        
+        <!------------------------blog title-------------------------->
+        <div class="row">
+            <div class="col-12">
+                <div class="h4 my-5">Is it okay to leave my job for becoming an entrepreneur………?</div>
+            </div>
+        </div>
+
+        <!----------------------first paragraph with picture--------------->
+        <div class="row">
+            <div class="col-12 col-lg-6"><img src="css/Images/blog1.0.jpg" style="height: 100%; width: 100%;"></div>
+            <div class="col-12 col-lg-6">
+
+                <div class="content text-justify">
+                    <p>
+                        Imagine a herd of sheep following their leader without any knowledge of which direction they are
+                        being led to? Rather, just following the leader blindfolded. And now, what if the leader jumps into
+                        a trench, what is going to happen next? Slowly and gradually, the whole herd is going to follow the
+                        leader and going to diminish one by one. <strong class="theme-color">Right?</strong>
+                    </p>
+                    <p>
+                        Now ,let me draw an analogy here. The leader of the herd is the drive to become a corporate
+                        professional, the herd is the group of people who just want to do what everyone is doing
+                        irrespective of exploring their potential. They just want to run in a rat race and prove to be the
+                        fastest rat around. And the trench here represents unexpected <strong class="theme-color">Covid-19 crisis </strong> that
+                        shook the corporate world. But what now? How will these blindfolded professionals sprinting in a rat
+                        race be able to get back on track? This group of people has never learnt to develop an acumen to
+                        tackle such risky situations. So, what now ?
+                    </p>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            
+          <div class="col-12">
+            <div class="content text-justify">
+
+                <p>
+                    Don’t you think this has been made the trend of our education system, where the top scorers are just
+                    supposed to become engineers or doctors? Why don’t anyone’s parents dream of their child becoming an
+                    entrepreneur? Jobs provide security and guaranteed income, agreed. But what if even
+                    <strong class="theme-color">Dhirubhai Ambani </strong> and <strong class="theme-color">Rattan Tata</strong> would have preferred security of
+                    their job over following their dreams and passion, would we have been able to witness an industrial
+                    revolution in Indian market? Entrepreneurship is a venture which though involves risk but at the
+                    same time, if accompanied by hard work and going an extra mile, even guarantees rich dividends. And
+                    the skills that one develops while handling real life situations independently can only be owed to
+                    real life experiences.
+                </p>
+
+                <p>
+                    Now ,let us consider the current situation. <strong class="theme-color">India</strong>, the nation which once used to be
+                    a plethora of economic opportunities and attract thousands of now job seekers is witnessing a
+                    downfall. Moreover, the<strong class="theme-color"> Covid-19</strong> pandemic has worsened the situation and has left
+                    gigantic number of sagacious professionals jobless as well apart from snatching away the livelihood
+                    of thousands of labourers. But these jobs did not have any risk factor, right? Then why did this
+                    happen? And since this has happened already then how are these people going to face it? The
+                    corporate professionals who have always been spoon fed by the companies and are hardly having any
+                    industry experience of leading a venture completely of their own?
+                </p>
+
+
+                <p>
+                    What use of a post-graduation degree is if someone still lacks any concrete skill that can guarantee
+                    him a livelihood?<strong class="theme-color"> Self-sufficient India</strong>, the dream of our <strong class="theme-color">Honourable Prime
+                    Minister</strong> certainly aims at the professionals creating jobs for others and become
+                    independent. Moreover, the <strong class="theme-color">Make in India</strong> campaign launched earlier was also
+                    primarily focused to give a boost to the start-up culture that is still very much underrated in our
+                    country. Our youth does not lack anywhere intellectually but the allotment of resources and funds by
+                    the government of India is still something where they have to suffer, and flight of their creativity
+                    faces a major impediment.
+                </p>
+
+                <p>
+                    Legalising the rules and their implementation throughout the country are two totally different
+                    things which have a major role to play in enhancing the start-up culture. Of what use is taking a
+                    horse to a well but not getting a bucket of water out for him to drink? Likewise, how can the new
+                    regulations pass and stored in files be of any help to the budding entrepreneurs who want financial
+                    assistance. There have been multiple incidents in the past when a team of passionate individuals
+                    could not make the best out of their potential. Moreover, the support and encouragement that most of
+                    us have for our fellow budding entrepreneurs is certainly not doing justice with their talent. When
+                    was the last time you appreciated the idea of your friend which he wanted to implement in real life
+                    and develop it more? Emotional support and appreciation from our friends certainly play a key role
+                    in determining our course of action.
+                </p>
+
+                <p>
+                    The current situation is certainly indicative of the fact that it is the dire need of the hour to
+                    bring about a concrete change in our education system and focus more on teaching entrepreneurial
+                    skills and skill development of the students in order to make them self-sufficient enough that they
+                    can not only lead their own <strong class="theme-color">start-ups</strong> but also provide a plethora of opportunities
+                    for many. Leadership is an inherent trait of Indians and it is needless to mention that time and
+                    again women have proved their acumen of leadership consistently and should be motivated and
+                    encouraged to initiate ventures of their own.
+                </p>
+
+                <p>
+                    More and more policies and campaigns should be initiated to inculcate the values of support and
+                    motivation in the entrepreneurs. Furthermore, the organisation of events and competitions related to
+                    designing products, exploring business ideas, discussing strategies and case studies need to be
+                    enhanced to make young minds learn the entrepreneurial skills right away from childhood. This
+                    exposure will not only boost their confidence but will also play an instrumental role in making them
+                    understand entrepreneurship closely and take a mature decision when it comes to pursuing a career.
+                </p>
+
+                <p>With the advancements in science and technology, social media, and digital marketing domains, that
+                    have been unexplored since long must be made use of and tapped to the fullest of their potential.
+                    Even though MNCs have inculcated these recent advancements in their work culture, small scale
+                    <strong class="theme-color">entrepreneurial ventures</strong> however lack at making the best use out of them. If these
+                    domains are uniformly publicised and explored, then even the start-ups are not far from progressing
+                    on the path of success. Amidst this corona crisis, more and more digitalization is certainly a step
+                    that we should take to increase the ease of business in near future. Rather than viewing this crisis
+                    as a stop, we should see it as a pause for sure. This preparatory leave needs to be made full use of
+                    to smoothen our way through upcoming challenges. </p>
+
+                <p>Even though there is no one single answer to the question being asked in the subtitle, however we
+                    can say that where jobs are full-fledged established in our country, entrepreneurships are still
+                    like a bud that if given proper nurturing in the form of motivation, resources, funds and liberal
+                    government policies have a huge possibility of blossoming into one of the most sought-after
+                    professions in our nation. Having a knack of taking risks, exceptional innovation and creativity
+                    skills and a desire to achieve what one desires at any cost is all that it takes to become a
+                    successful entrepreneur. 
+                  </p>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------ blog heading--------------------->
+        <div class="row" id="womenentrepreneurship">
+            <div class="col">
+                <div class="h2 my-5 text-center">Women Entrepreneurship</div>
+            </div>
+        </div>
+        
+        <!------------------------blog title-------------------------->
+        <div class="row">
+            <div class="col">
+                <div class="h4 my-5"></div>
+            </div>
+        </div>
+
+        <!----------------------first paragraph with picture--------------->
+        <div class="row">
+            <div class="col-12 col-lg-6"><img src="css/Images/blog2.0.jpg" style="height: 100%; width: 100%;"></div>
+            <div class="col-12 col-lg-6">
+                <div class="content text-justify">
+                    <p>
+                        Do you know who laid the foundation of one of the major pharmaceutical companies who is playing an
+                        extremely vital role in this corona virus pandemic? Yes, you guessed it right-its <strong class="theme-color">Kiran
+                          Mazumdar Shah, the founder of Biocon</strong> .
+                      </p>
+    
+                      <p>
+                        Or do you know, who is one of the role models of ambitious women entrepreneurs around the world? Her
+                        determination and passion made her CEO of one of the giant FMCG companies, later became one of the
+                        director members of retail online giant Amazon- Yes, you guessed it right, its <strong class="theme-color">Indra
+                          Nooyi</strong>.
+                      </p>
+    
+                      <p>
+                        Pages of achievement are filled with the names of women who break all the shackles and emerged as a
+                        role model for the hundred thousands of girls around the world. From <strong class="theme-color">Shaw to Upasna
+                          Taku</strong>, founder of <strong class="theme-color">Mobikwik</strong> all had one thing in common- determination and
+                        passion to spearhead a change landed them on the top of the ladder of success.
+                      </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <div class="content text-justify">
+                    <p>
+                        Though, the human race might not have evolved much biologically over the years, but the way women
+                        see themselves and how they want the society to look at them has radically evolved over the period
+                        of time. During the recent years, women have shifted the,
+                        <strong class="theme-color">
+                          <center> “You are supposed to light up the cooking fuel every day ” </center>
+                        </strong>
+                        <center>to</center>
+                        <strong class="theme-color">
+                          <center>“We are born with the purpose of lighting up the spark of innovation,invention,and
+                            progress which lies within us.” </center>
+                        </strong>
+                      </p>
+    
+                      <p>
+                        The rise of entrepreneurship culture among women in India has led the movement of a substantial
+                        change in mindsets and behavioral patterns of the society as a whole. It has changed the way women
+                        see themselves, it has changed the way their male counterparts see them, and it has been serving as
+                        an undying inspiration for little girls for transforming their dreams into reality. People are no
+                        more looking with the eyes of suspicion when a woman approaches them to rent an apartment and to
+                        live alone.
+                      </p>
+    
+                      <p>
+                        These small changes can influence great things. I mean just think if a landlord just denied to rent
+                        an apartment in Bangalore to the founders of Flipkart , right where the e-commerce giant started,
+                        then maybe things wouldn’t have been the same as they are today.
+                      </p>
+    
+                      <p>
+                        Not just societal changes, but this culture has also taken the Indian economy on a ride. As of now,
+                        women constitute 14% of the entrepreneurs in India but as per a study by <strong class="theme-color">McKinsey</strong>,
+                        equal participation of women in India has cause a spike in India’s GDP by 16-60% by 2025,
+                        contributing an addition of $2.9 trillion to the economy. Not only they contribute in terms of
+                        <strong class="theme-color">GDP</strong> but also tend to generate a chunk of employment especially for women who want
+                        to step out of their domestic domains and demonstrate their skill development and potential to be a
+                        part of their families not only socially, but also economically. As per the statements of rising
+                        women entrepreneurs of the country, many of them provides employment to women who want to restart
+                        their careers after they have been handcuffed with a plethora of cultural and social barriers and
+                        prove to the world again their sense of commitment and dedication towards work.
+                      </p>
+    
+                      <p>
+                        While the <strong class="theme-color">UN convention</strong> has placed gender equality at a stature of priority as they
+                        listed it as one of the sustainable development goals of 2030, some of the Indian women has proved
+                        that empowerment of women will not only fulfill one of their sustainable goals but rather accomplish
+                        the very idea of sustainable development. For instance, <strong class="theme-color">Pinky Maheshwari</strong>- who was
+                        apparently challenged by her son to make environmentally friendly paper ended up inventing handmade
+                        paper made out of cotton that is embedded with seeds. These can even be planted and grown into trees
+                        when the paper has served its purpose. Such an instance stands as a firm testimony that if a woman
+                        can bring new life to Earth, she probably bears the capability of reviving a planet infected with
+                        certain environmental and social demons.
+                      </p>
+    
+                      <p>The struggle of women entrepreneurs over the past times certainly seems to bear fruit as the need
+                        of development of women entrepreneurship has paved its way to the political outlook of the country.
+                        The very recent <strong class="theme-color">Startup India Initiative</strong> aims to create and promote empowered women
+                        entrepreneurs in this <strong class="theme-color">“golden age of globalization, digitalization, and start-up
+                          booms.”</strong> The government initiative has already started to reflect outcomes in the sense
+                        that of all the directors of startups, 35% are women.The entrepreneurship culture has also urged the
+                        political authorities to make entrepreneurship education an insidious part of the education system
+                        and not just remain the exclusive right of women belonging to upper middle class or rich class of
+                        the society.
+                      </p>
+    
+                      <p>The success stories have women entrepreneurs have indeed influenced the social fragment of the
+                        country for the better. Such a change for the better is implicitly implied in more and more venture
+                        capital supporting the cause of gender diversity in entrepreneurs and more and more angle investors
+                        willing to invest in business ideas of women. </p>
+    
+                      <p>But all the transformations stated above cannot sugar coat the impact some of the ills of the
+                        society have left upon us. One of these social demons is illiteracy, most of the women in India are
+                        still ailing with this disease of illiteracy. <strong class="theme-color">Illiteracy</strong> may have serious impacts
+                        on the development of a person as an entrepreneur as for being an entrepreneur, either a woman has
+                        to be educated enough to convert a business idea into reality or should have access to adequate
+                        mentorship for doing so. Most of the women who possess impeccably innovative business ideas still
+                        lags behind in access to either adequate education or appropriate mentorship to even avail the
+                        advantages offered by entrepreneurship development programs introduced by the government. </p>
+    
+                      <p> In a nutshell, overcoming this hurdle is the next level in this lengthy and glorious journey of
+                        developing a women entrepreneurship culture in India.</p>
+    
+                      <p>An article on women entrepreneurship should indeed conclude with a quote from the very first woman
+                        entrepreneur of the country:
+                        <strong class="theme-color">
+                          <center>“Ivy league degrees or fancy MBAs are not what make an entrepreneur. Grit, perseverance
+                            and a superhuman ability to have faith in yourself does.”</center>
+                        </strong>
+                        <center><strong class="theme-color">- Kalpana Saroj </strong>(CEO, Kamani Tubes)</center>
+                      </p>
+                      <p>Let us know if you are suffering from the same problem of lack of appropriate mentor ship in
+                        setting up your business by taking out a small survey, link for what has been provided below:</p>
+  
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="businessincubator">
+            <div class="col">
+                <div class="h2 my-5 text-center">Business Incubator Support</div>
+            </div>
+        </div>
+        
+        <!------------------------blog title-------------------------->
+        <div class="row">
+            <div class="col">
+                <div class="h4 my-5 text-center">
+                    
+                        WHO REQUIRES BUSINESS INCUBATOR SUPPORT :
+                        <h3>
+                            NEW VENTURES OR START-UP OR ENTREPRENEUR ?
+                        </h3>
+                        What is the use of a blackboard without a teacher……?
+                        <hr/> 
+                     
+                </div>
+            </div>
+        </div>
+
+        <!----------------------first paragraph with picture--------------->
+        <div class="row">
+            <div class="col-12 col-lg-6"><img src="css/Images/blog3.jpg" style="height: 100%; width: 100%;"></div>
+            <div class="col-12 col-lg-6">
+
+                <div class="content text-justify">
+                    <p>
+                        Imagine the cricket team of <strong class="theme-color">India</strong> leaving for <strong class="theme-color"> West Indies</strong> for a
+                        test series. All the match winning players with their exceptional cricketing skills are set to show
+                        their best performance. As usual, the practice sessions are held before the main tournament begins.
+                        But, what is going on? No one is there to review the performance of the batsmen. No one is there to
+                        guide the team captain regarding positioning of field. No one is present on the ground to analyse
+                        the pitch with his experience and predict if batting would be a better option or bowling. Woah!!!
+                        The coach is not accompanying the team. So now, irrespective of the acumen possessed by the players,
+                        will they be able to give their best in the absence of any mentorship?
+                      </p>
+                      <p>
+                        In real case scenario, if we assume the team <strong class="theme-color"> India</strong> here to be a budding
+                        entrepreneur, then the exceptional cricketing skills would be his innovation and creativity and the
+                        fire with which he is motivated to give his best. The positioning of fielders would be the
+                        appropriate allotment of funds, resources and brainstorming in various departments of his start-up,
+                        then the role of coach is played by <strong class="theme-color"> BUSINESS INCUBATOR</strong>, the mentor of budding
+                        entrepreneurs, new ventures and start-ups.
+                      </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <div class="content text-justify">
+                    
+                      <p>
+                        Considering the current situation in our nation where start-up culture is already pretty much
+                        underrated, role of business incubator becomes even more crucial. A newly formed start-up that is
+                        already in the infant phase of its growth and development is truly mentored by a business incubator.
+                        But most of us must be oblivious of what is a business incubator. A business incubator is a company
+                        that helps start-up companies to develop by providing services such as management training or office
+                        space and guidance to progress on the path of economic development. They not only provide the access
+                        to various marketing plans and means of obtaining capital but also a range of more specialized
+                        professional services.
+                      </p>
+    
+                      <p>
+                        Let us talk about the importance of business incubators in various regions. Since highly
+                        economically developed regions ultimately involve a very stiff competition among the newly growing
+                        start-ups, thus the vitality of business incubators cannot be negated here. A start-up owner can
+                        certainly not expect to be the jack of all trades, thus there must be different domains where his
+                        knowledge would not be sufficient enough for taking decisions. Again, here comes another significant
+                        aspect of the incubators that they play a major role in decision making processes for the start-up.
+                      </p>
+    
+    
+                      <p>
+                        Furthermore, incubators offer numerous benefits to owners of start-up businesses. Their office and
+                        manufacturing space is offered at below-market rates, and their staff supplies advice and
+                        much-needed expertise in developing and expanding business. National Business Incubation Association
+                        is a national website that maintains all the records of various incubators and which one to refer to
+                        under various circumstances. Incubators demand a distinct fleshed-out business plan that is further
+                        reviewed by their screening committee. <strong class="theme-color"> Incubators</strong> thereafter carefully screen
+                        potential because even their space, equipment and finances are limited, and they want to be sure
+                        they choose to nurture businesses with best possible chance to success.
+                      </p>
+    
+                      <p>
+                        Over the time, even incubators have evolved. Earlier, they only focused on technology companies, but
+                        the newer incubators work with companies from diverse industries. Incubators play a major role in
+                        helping start-ups to save operating posts. Incubators help start-ups with their financing need by
+                        referring them to <strong class="theme-color"> angel investors</strong> and venture capitalists and helping them with
+                        the presentations. Start-ups can also take full use of the lower lease rates offered by incubators.
+                        Moreover, start-ups may have better luck financing if they have the approval stamp of incubator
+                        programs.
+                      </p>
+    
+                      <p>
+                        In addition to financial aids, start-ups further need help to compete successfully with established
+                        industry players. Incubators can tap into their networks of experienced entrepreneurs who can
+                        provide management guidance and operational assistance. For example, a restaurant entrepreneur could
+                        highly benefit from experienced hospitality industry services to learn about the difficulties of
+                        overseas expansion. Start-ups benefit a lot from having respected individuals on board and
+                        scientific advisory plans who bring invaluable experience and connection along with them.
+                      </p>
+    
+                      <p>
+                        Furthermore, close working relationships between an incubator’s start-up create synergies. The
+                        connections and networks created through incubators sustain for a long time. Start-up entrepreneurs
+                        can provide motivation and encouragement to one another and employees may share new ideas on
+                        approaches to problems. They may plan to join marketing campaigns and cooperate on product
+                        development initiatives. Even though varying geographic location of different start-ups is a
+                        challenge for start-ups to connect with each other. However, with increasing globalisation and
+                        digitisation of the market, even this will not be an issue of concern in coming times and can be
+                        easily resolved by providing a remote platform for start-up employees to brainstorm.
+                      </p>
+    
+                      <p>By helping new businesses prosper, incubators also help in acting as employment generators for
+                        their host communities. According to a report, start-ups in incubation programs have greater
+                        viability to show superior financial performance over the long time. An estimated 40% of
+                        investment-seeking member companies source investment through a direct incubator program connection.
+                        They create long-lasting jobs for new graduates, experienced mid-career personnel and even for
+                        veteran executives. This benefits the job-seeking communities a lot. Hence, this gives an invaluable
+                        boost to the economy as well. </p>
+    
+                      <p>Moreover, having the business infrastructure in place and available and providing business services
+                        and experts for the start-up to focus on key areas that matter the most, i.e. the core business
+                        product. Start-ups are thereby able to focus their time, efforts, energy, and resources on creating,
+                        evolving and testing their products. Thus, the essence of their business idea is protected and
+                        security of resources is also provided by the incubator in order to let them focus on the target
+                        they aspire to achieve. And this is the place where <strong class="theme-color"> Power2Create</strong> comes into
+                        picture and helps the new ventures flourish in the market. </p>
+    
+                      <p>In a nutshell, we can say that for the budding entrepreneurs to rise and shine, incubators are a
+                        blessing. The benefits that a start-up can extract out of an incubator are of immeasurable
+                        importance. Business incubation is a concept that is highly misunderstood in our country. And
+                        majority of people do not even know about it. Thus, spreading education and awareness about the
+                        business incubators is the need of the hour. And this needs to be complemented with the government
+                        policies as well. Conclusively, we cannot deny to the fact that business incubators play a vital
+                        role to support entrepreneurs, new ventures and start-ups and not only provides required resources
+                        but also opens a wide range of options to be explored and helps them gain an edge over other
+                        start-ups of their domain.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------------blog heading------------------------>
+        <div class="row" id="entrepreneurshipvsworld">
+            <div class="col">
+                <div class="h2 my-5 text-center">Entrepreneurship vs The World</div>
+            </div>
+        </div>
+        
+        <!------------------------blog title-------------------------->
+        <div class="row">
+            <div class="col">
+                <div class="h4 my-5"></div>
+            </div>
+        </div>
+
+        <!----------------------first paragraph with picture--------------->
+        <div class="row">
+            <div class="col-12 col-lg-6"><img src="css/Images/blog4.jpg" style="height: 100%; width: 100%;"></div>
+            <div class="col-12 col-lg-6">
+
+                <div class="content text-justify">
+                    <p>
+                        Have you ever visited a river rafting site? Well in case you have, then you might be pretty aware of
+                        the scenario there- Some people out there can’t wait to get on the raft and ride through the river
+                        of uncertainties, twists and turns, and risks. But there are some who just prefer to stay out of
+                        this adventurous feat and watch from a distance and avoid any kind of risks and uncertainties.
+                      </p>
+    
+                      <p>
+                        A similar picture can be drawn in context of the acceptance of entrepreneurship in the world. All
+                        around the globe, people share mixed feelings about the rising culture of entrepreneurship- some are
+                        born with the spirit of entrepreneurship in their blood and can’t wait to build an empire and be
+                        their own bosses. On the other hand, there are some whose only desire is to find an element of
+                        stability and normalcy in their lives. This very situation arises because while some may see
+                        entrepreneurship as their golden ticket to success, the others may see it as something which if
+                        unsuccessful can put an end to their careers. The culture of entrepreneurship possesses some inherit
+                        pros and cons:
+                      </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col">
+                <div class="content text-justify">
+                    <h3>Pros : </h3>
+                  <ul>
+                    <li><strong class="theme-color">High degree of flexibility: </strong> An entrepreneur enjoys unlimited power in making
+                      decisions regarding how much of work they are to perform, or the number of working hours, and even
+                      about their workplace. Many of the entrepreneurs manipulate their working schedules according to
+                      personal requirements and tend to allocate their effectively towards their families, hobbies,
+                      recreation, or other areas of interest.</li>
+
+                    <li><strong class="theme-color">Spontaneous decision making:</strong> The very essence of successful business is taking
+                      decisions at the right time, avail the right opportunity, and in turn gets your business on the
+                      right track. Being an entrepreneur, provides a person with immense authority to enable quicker
+                      decision making and avail a business opportunity before someone else make a benefit out of it.
+                    </li>
+
+                    <li><strong class="theme-color">Challenging sprit:</strong> Every time the Sun rises, every time the morning birds
+                      chirp, every time an entrepreneur open his/her eyes to a new day, it beholds within it a new
+                      challenge with an all new excitement for him/her in the form of the changing business environment,
+                      rising competitors, modified governmental policies, etc.</li>
+
+                    <li><strong class="theme-color">Control:</strong> Entrepreneurship as a career offers a person to exercise absolute
+                      control over his/her profession. He gets to decide what work is he going to do, or what the core
+                      objectives of his business are going to be, or how would he like to serve his customers, or on
+                      what prospect of business is he going to place greater emphasis on, whether it is profit
+                      maximization or environmental concerns.</li>
+
+                    <li><strong class="theme-color">Rational remuneration:</strong> En entrepreneurship concern doesn’t bear any chance of
+                      unjust salary, rather an entrepreneur earns profit on the basis of his performance and as an
+                      outcome is always rewarded a fair remuneration </li>
+                  </ul>
+
+                  <h3>Cons : </h3>
+                  <ul>
+                    <li><strong class="theme-color">Overburdening:</strong> Sometimes the absolute power and authority an entrepreneur
+                      enjoys may prove to be a burden on that person in terms of work load and responsibility of being
+                      accountable for either the success or the failure of a business organization.</li>
+
+                    <li><strong class="theme-color">Lack of stability:</strong> Since an entrepreneur is remunerated in the form of profits
+                      rather than a fixed salary, and it is a well know fact that profits bear a bane of being unstable.
+                      Sometimes an entrepreneur may earn abnormally high profits and sometimes he may end up being
+                      bankrupt too. In entrepreneurship, every outcome has an equal probability, so an entrepreneur has
+                      to make his way through this tough road full of instabilities and unprecedented turns.</li>
+
+                    <li><strong class="theme-color">Competition:</strong> A business concern in vulnerable to cut throat competition at all
+                      times. So an entrepreneur has to evolve every single days in the form of new and unique features
+                      in their products or services a and formulating a unique selling proposition (USP) for it to face
+                      the competition. This is much evident in the case of Apple, Samsung and MI releasing very model
+                      with unique and innovative features to compete in the market.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------blog heading----------------------->
+        <div class="row" id="relationship">
+            <div class="col">
+                <div class="h2 my-5 text-center">Relationship of Technology and Entrepreneurs</div>
+            </div>
+        </div>
+        
+        <!------------------------blog title-------------------------->
+        <div class="row">
+            <div class="col">
+                <div class="h4 my-5"></div>
+            </div>
+        </div>
+
+        <!----------------------first paragraph with picture--------------->
+        <div class="row">
+            <div class="col-12 col-lg-6"><img src="css/Images/blog5.jpg" style="height: 100%; width: 100%;"></div>
+            <div class="col-12 col-lg-6">
+
+                <div class="content text-justify">
+                    <p>
+                        Can you think of a <strong class="theme-color">Microsoft</strong> without <strong class="theme-color">William Henry gates</strong>,
+                        popularly known as <strong class="theme-color">Bill Gates</strong>, or <strong class="theme-color">Facebook</strong> without <strong class="theme-color">Mark
+                          Zuckerberg</strong>, or <strong class="theme-color">Google</strong> without Larry page, or Amazon without <strong class="theme-color">Jeff
+                          Bezos</strong>? – I guess not. This is because the names of these entrepreneurs have been linked
+                        with these infamous business ventures with such a firm thread that they are nearly inseparable and
+                        evidently it becomes almost impossible to imagine these businesses without these names. The linking
+                        thread here is called technology- technology is one the primary reasons that most of the successful
+                        business ventures we can reminisce even exist.
+                      </p>
+    
+                      <p>
+                        Beholding its inception in the Silicon Valley back in the 1980s to <strong class="theme-color">Bangalore</strong>
+                        (commonly known as the silicon valley of India) become the software development giant in the entire
+                        world, technology has run its course, changing the way entrepreneurs dream, they way they think, the
+                        way they develop their ideas, the way they launch their enterprises, and the way they reach the
+                        pinnacle of the business world.
+                      </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col">
+                <div class="content text-justify">
+                    <p>
+                        If we go back in time, the entrepreneurs while thinking of a business idea might plan of satisfying
+                        a local requirement of the customers but in contemporary world, a person living in India might even
+                        dream of addressing the needs of customers in the <strong class="theme-color">United States of America</strong>. While
+                        the geographical distance between the two countries is 13,568 kilometers but technology has narrowed
+                        it down to practical zero distance when it comes to expanding your business.
+                      </p>
+    
+                      <p>
+                        If we think consciously, technology and entrepreneurs share a very intimate relationship that is
+                        because both of them eventually have the same goal- evolution of the world. Basically, entrepreneurs
+                        apply their minds in thinking evolutionary ideas and then use their favorite tool- technology to
+                        manifest that evolutionary thinking into reality.
+                      </p>
+    
+    
+                      <p>
+                        Now this close relationship contains within itself a high degree of co-dependence too. Why is that?-
+                        This is because both of them are highly dependent on each other to achieve their common goals. For
+                        instance, <strong class="theme-color">Bill Gates</strong> wouldn’t have been able to develop if there was no such thing
+                        as software technology. But on the other side of the coin, how on earth would have Microsoft
+                        transformed our lives if it wasn’t for the great entrepreneur <strong class="theme-color">Bill Gates</strong>’
+                        evolutionary thinking. So, both (entrepreneurs and technology) both tend to serve each other’s
+                        purpose to radically transform our lives.
+                      </p>
+    
+                      <p>
+                        And as technology as implanted itself in every nook and corner of the world, this relationship
+                        between tech and entrepreneurs have strengthened significantly and this increasing strength has
+                        certainly increased the scope for development of both entrepreneurship and technological
+                        development- the rise of technology has widened the scope in the business in the form of online
+                        retailing, digital marketing, globalization, 24*7 customer support services, and so on. On the same
+                        footage, the development of entrepreneurship has led the way to technological development with new
+                        kinds of business-related software programs emerging on the scene.
+                      </p>
+    
+                      <p>
+                        In the early days, it was a convention that only big shot entrepreneurs can get hold of the
+                        appropriate tech and build their business empires .But with the passage of time, technology has
+                        become such indispensable part of business ventures that it has become one of the foundations of
+                        even rising small-scale startups all around the globe.Do you feel that your entrepreneurship venture
+                        also needs to build a strong relationship with technology?
+    
+                      </p>
+    
+                      <p>
+                        Well, then I have good news for you. We at P2L can help you with every step as you undertake this
+                        evolutionary journey of yours. In case, you can’t wait to be small but vital part of our big family,
+                        just take out a couple minutes and simply fill this contact form:
+                      </p>
+    
+                    
+
+                </div>
+            </div>
+        </div>
+
+        <!-----------------------blog heading-------------------------->
+        <div class="row" id="rightselection">
+            <div class="col">
+                <div class="h2 my-5 text-center">Right Selection of Technology and Business Support</div>
+            </div>
+        </div>
+        
+        <!------------------------blog title-------------------------->
+        <div class="row" id="whyrightselection">
+            <div class="col">
+                <div class="h4 my-5">Why Right Selection Of Technology And Business Support For Start-Up And New Ventures Is Required??</div>
+            </div>
+        </div>
+
+        <!----------------------first paragraph with picture--------------->
+        <div class="row">
+            <div class="col-12 col-lg-6"><img src="css/Images/blog6.jpg" style="height: 100%; width: 100%;"></div>
+            <div class="col-12 col-lg-6">
+
+                <div class="content text-justify">
+                    <p>
+                        Can you imagine diving into an ocean without any oxygen cylinder or life jacket and other necessary
+                        equipment needed to survive? And even if you dive in, for how long will you be able to survive? 2
+                        minutes, 5 minutes, 10 minutes? And then what after? Slowly and gradually, you are going to
+                        suffocate and feel difficulty in breathing. And then you are going to realize how gigantic of a
+                        blunder you did by not taking any life jacket along. But by then, it is going to be too
+                        late……………………………
+                      </p>
+    
+                      <p>
+                        Now let us draw an analogy here. The diver is a budding start-up with innovation and creativity all
+                        set to make entry in the ocean of market. But what is the life-saving kit here? Life-saving kit,
+                        here is the right choice that a start-up needs to make about the crucial factors that are going to
+                        determine its future in the market. One of these includes the factors of technology and business
+                        support. In the absence of these essential components of life support system, the entrepreneur and
+                        his start-up would not be able to survive for long in market and this will be the point of regret
+                        for them where they are going to realise the blunder that they did. But it would have got too late
+                        by this time….
+                      </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col">
+                <div class="content text-justify">
+                    <p>
+                        However, the best part is that it isn’t late right now. You can make the correct choices right now
+                        in order to let the wings of your innovation and entrepreneurship fly high in the sky of success.
+                        Every entrepreneur has ideas, right? Some of them are good, others not so good, while some being
+                        exceptional. But what is it that differentiates a great idea from creating a successful start-up
+                        company? Lots of hard work, yes! Dedication and many sleepless nights, yes! A bit of failure too,
+                        yes! But something crucial still seems to be missing. A very significant factor that is going to
+                        determine the future of a start-up is the planning of strategies and their execution.
+                      </p>
+    
+                      <p>
+                        Having an idea is one thing but having a legitimate and executable business plan is something
+                        totally different. A proper business plan provides you an edge over other competitors of yours
+                        trying to explore the same domain. But how to make one?
+                      </p>
+    
+    
+                      <p>
+                        A business plan is nothing but a written description of your company’s future. You need to outline
+                        what you want to do. You need to brainstorm how you want to execute it and how will you go about
+                        with the strategies you have made to ensure success. Typically, these plans outline and determine
+                        the first 3 to 5 years of your business strategy. Thus, it needs to be the first thing in your list
+                        in order to check because you are going to use it in order to complete the remaining targets on your
+                        list.
+                      </p>
+    
+                      <p>
+                        Furthermore, in this era of industrialization and globalisation, technology has become an
+                        indispensable component of any and every business. Flourishing technological innovation is certainly
+                        a key to success. In this domain, apart from employing technology in the external communication
+                        systems of the company, even the focus needs to be shifted towards internally developed technology.
+                      </p>
+    
+                      <p>
+                        Thus, inclusion of new technology in various domains has come up with multiple challenges as well.
+                        Countering these challenges is an urgent issue of concern and need to be handled with
+                        technologically sound managers with great intellect. They must serve both as technical developers
+                        and implementers. The employees even though are not very much proficient in technology, they still
+                        need to learn the required technical skills required. Then they can apply these technologies in the
+                        areas they are knowledgeable about.
+                      </p>
+    
+                      <p>
+                        Thus, keeping above points we can say that apart from adopting advanced models for finance and
+                        marketing, one even needs to give due attention to appropriate selection of technology and a
+                        business plan in order to make his business do wonders!!!
+                      </p>
+                </div>
+            </div>
+        </div>
+		</div>
+		</div>
+    </div>
+
+    <div id="footer" class="my-5">
+        
+    </div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./footer.js"></script>
+    <script src="navBg.js"></script>
+    <script src="C2.js"></script>
+</body>
+</html>

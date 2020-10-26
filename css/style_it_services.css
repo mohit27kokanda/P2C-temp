@@ -1,0 +1,478 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  scroll-behavior: smooth;
+  background-color: #fafafa;
+}
+
+.theme-color {
+  color: #ea7e6e;
+}
+
+.banner-business-text {
+  font-size: 8vw;
+}
+.nav-color-item:hover {
+  color: #e76e5c !important;
+}
+
+body .bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6,
+.bgimg-7,
+.bgimg-8,
+.bgimg-9,
+.bgimg-10 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
+  background-size: 100% 100%;
+  height: 60%;
+}
+
+.banner-business-service {
+  background-image: linear-gradient(
+      115deg,
+      rgba(37, 37, 37, 0.596),
+      rgba(29, 28, 28, 0.5)
+    ),
+    url(Images/IT_services1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 72%;
+
+  background-attachment: scroll;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .banner-business-service {
+    background-attachment: scroll;
+  }
+  .banner-business-service {
+    background-image: linear-gradient(
+        115deg,
+        rgba(37, 37, 37, 0.596),
+        rgba(29, 28, 28, 0.5)
+      ),
+      url(Images/IT_service_Mobile.png);
+    /* background-image: url('Images/IT_service_Mobile.png'); */
+  }
+}
+
+@keyframes glow-flex {
+  5% {
+    letter-spacing: 0.2px;
+    text-shadow: 0.5px 0.5px 2px #e76e5c;
+    opacity: 0.99;
+  }
+  10% {
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 4px #ea7e6e;
+    opacity: 0.95;
+  }
+  15% {
+    letter-spacing: 0.7px;
+    text-shadow: 1.5px 1.5px 6px #e96450;
+    opacity: 0.9;
+  }
+  20% {
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px #e6543e;
+    opacity: 0.85;
+  }
+  25% {
+    letter-spacing: 1.2px;
+    text-shadow: 2.5px 2.5px 10px #e0432b;
+    opacity: 0.8;
+  }
+  30% {
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 12px #e7371c;
+    opacity: 0.75;
+  }
+}
+
+.banner-business-service-text {
+  font-size: 8vw;
+  color: white;
+  animation-name: glow-flex;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 500ms;
+  animation-timing-function: ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+.bgimg-1 {
+  background-image: url("Images/android\ app.png");
+  /* margin-top: 20px; */
+}
+
+.bgimg-2 {
+  background-image: url("Images/Hybrid\ app\ development.png");
+}
+
+.bgimg-3 {
+  background-image: url("Images/ios.png");
+}
+
+.bgimg-4 {
+  background-image: url("Images/Web\ development.png");
+}
+
+.bgimg-5 {
+  background-image: url("Images/Magento.png");
+}
+
+.bgimg-6 {
+  background-image: url("Images/php.png");
+}
+
+.bgimg-7 {
+  background-image: url("Images/wordpress.png");
+}
+.bgimg-8 {
+  background-image: url("Images/dot_net\ development\ .png");
+}
+.bgimg-9 {
+  background-image: url("Images/internet\ marketing.png");
+}
+.bgimg-10 {
+  background-image: url("Images/SEO.png");
+}
+
+.back-bg-color-caption {
+  background-color: rgb(255, 255, 255, 0.4);
+  height: 100%;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.caption span.border-business {
+  color: #ea7e6e;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 8px;
+}
+
+.text-1 h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: rgb(37, 37, 37);
+}
+
+.text-2 h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: rgb(37, 37, 37);
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 375px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4,
+  .bgimg-5,
+  .bgimg-6,
+  .bgimg-7,
+  .bgimg-8,
+  .bgimg-9,
+  .bgimg-10 {
+    background-attachment: scroll;
+  }
+  .bgimg-1 {
+    background-image: url("Images/mobile_android\ app.png");
+  }
+
+  .bgimg-2 {
+    background-image: url("Images/mobile_hybrid\ app.png");
+  }
+
+  .bgimg-3 {
+    background-image: url("Images/mobile_ios.png");
+  }
+
+  .bgimg-4 {
+    background-image: url("Images/mobile_web\ development.png");
+  }
+
+  .bgimg-5 {
+    background-image: url("Images/mobile_Magento.png");
+  }
+
+  .bgimg-6 {
+    background-image: url("Images/mobile_php.png");
+  }
+
+  .bgimg-7 {
+    background-image: url("Images/mobile_wordpress.png");
+  }
+  .bgimg-8 {
+    background-image: url("Images/mobile_dot_net\ development.png");
+  }
+  .bgimg-9 {
+    background-image: url("Images/mobile_internet\ marketing.png");
+  }
+  .bgimg-10 {
+    background-image: url("Images/mobile_seo.png");
+  }
+}
+
+.text-1 {
+  color: #777;
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+  scroll-behavior: smooth;
+}
+
+.text-2 {
+  color: #ddd;
+  background-color: #5a5d61;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+  scroll-behavior: smooth;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.nav-link-btn-company-bottom-nav {
+  color: #000;
+  transform: color;
+  transition-duration: 500ms;
+}
+.nav-link-btn-company-bottom-nav:hover {
+  color: #ea7b6a;
+  transform: color;
+  transition-duration: 500ms;
+}
+
+.collapse .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+.collapse .navbar-nav .nav-item.active .nav-link,
+.collapse .navbar-nav .nav-item:hover .nav-link {
+  color: #ea7e6e;
+}
+
+.bg-none .navbar-collapse {
+  background-color: none;
+  z-index: 9;
+  text-align: center;
+}
+
+.navbar-toggler {
+  outline: none !important;
+  border: none !important;
+}
+
+@media (min-width: 992px) {
+  .hero li {
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+}
+
+#footer {
+  background: #fafafa;
+  color: #848484;
+  font-size: 14px;
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 16px;
+  padding: 0 30px;
+  outline: none;
+  margin: 1px;
+  border: 1px solid black;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+#footer .footer-newsletter form input[type="email"] {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #eaeaea;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 20px;
+}
+#footer ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-top ul li a,
+.footer-contact a {
+  color: #848484;
+  text-decoration: none;
+  transform: color;
+  transition-duration: 500ms;
+}
+
+.footer-top ul li a:hover,
+.footer-contact a:hover {
+  color: #e8715f;
+  transform: color;
+  transition-duration: 500ms;
+}
+
+.footer-icon-link {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.footer-icon-link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #000;
+  transform: scaleX(0);
+  transition: transform 500ms ease-in-out;
+  transform-origin: 50% 50%;
+}
+
+.footer-icon-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: 50% 50%;
+}
+
+.footer-icon {
+  transform: translate(0px, 0px);
+  transition-duration: 500ms;
+}
+.footer-icon:hover {
+  transform: translate(0px, -10px);
+}
+
+.n1,
+.n2 {
+  color: white;
+
+  margin-top: 10px !important;
+}
+
+.n1:hover {
+  color: #e76e5c;
+}
+
+.n2:hover {
+  color: #e76e5c;
+}
+/* mobile view of 1st container */
+@media (max-width: 986px) {
+  .navbar .mobile-button_slide {
+    height: 10px !important;
+
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: inset -35px 0 0 0 white;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    font-size: 1.1rem;
+    margin-right: auto;
+  }
+
+  .navbar .mobile-view-ul .mobile-view-li {
+    height: 100%;
+  }
+
+  .navbar .mobile-view-ul .mobile-view-li {
+    padding: 35px 0;
+  }
+
+  .navbar .mobile-button_slide {
+    font-weight: 500;
+    cursor: pointer;
+    /* box-shadow: inset -25px 0 0 0 white; */
+    padding: 5px 0;
+    height: 10px !important;
+    margin: 30px auto;
+  }
+  .no-banner-heading {
+    display: none;
+  }
+  .navbar-toggler {
+    top: 10px;
+    right: 0px;
+  }
+  .navbar .logo {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+  }
+  .mobile-view {
+    display: none !important;
+  }
+  .mobile-first-text {
+    margin-top: 150px !important;
+  }
+  .mobile-view-background {
+    width: 100%;
+    height: 100%;
+    background-color: #ffdab9;
+    z-index: 1;
+  }
+  .banner-business-service-text {
+    font-size: 8vw;
+    color: white;
+    animation-name: glow-flex;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 500ms;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+  }
+  .no-display {
+    display: none;
+  }
+}

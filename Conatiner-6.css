@@ -1,0 +1,161 @@
+.C6-Industries {
+  margin-top: 0px;
+}
+
+.C6-Heading {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  height: 120px;
+  /* text-decoration: none; */
+}
+.C6-Heading-Div h2::after {
+  content: " ";
+  position: absolute;
+  margin-top: 20px;
+  /* top: -10px; */
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #e96b56;
+  align-self: center;
+  left: calc(50% - 25px);
+}
+.C6-Detail-heading {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.C6-row-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.C6-row-2 {
+  padding: 30px 0px;
+  /* border: 2px solid blue; */
+}
+.C6-Circle {
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* padding: 30px; */
+}
+
+.Circle-Heading {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+}
+
+.Back-Text {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.C6-front-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+/* entire container, keeps perspective */
+
+.flip-container {
+  perspective: 1000px;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+  border: 5px solid #e96c56;
+}
+
+.flip-container,
+.front,
+.back {
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid #f1a496;
+  box-shadow: 0px 0px 10px 0px #e96c56;
+}
+
+/* flip speed goes here */
+.flipper {
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
+@media (max-width: 986px) {
+  .C6-Circle {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    padding: 10px 45px;
+    margin: 15px auto;
+  }
+  .flip-container,
+  .front,
+  .back {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 5px solid #f1a496;
+    box-shadow: 0px 0px 10px 0px #e96c56;
+  }
+
+  /* flip speed goes here */
+  .flipper {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+  }
+  .C6-front-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    margin-top: 60px;
+    padding-bottom: 10px;
+    margin-left: 95px;
+  }
+}

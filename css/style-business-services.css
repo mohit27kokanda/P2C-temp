@@ -1,0 +1,426 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  scroll-behavior: smooth;
+  background-color: #fafafa;
+}
+
+.theme-color {
+  color: #ea7e6e;
+}
+
+/* .back-bg-color-business{
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-attachment: fixed;
+} */
+
+.banner-business-text {
+  font-size: 8vw;
+}
+/*  */
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6 {
+  position: relative;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 65%;
+  scroll-behavior: smooth;
+  background-size: 100% 100%;
+}
+.nav-color-item:hover {
+  color: #e76e5c !important;
+}
+
+.banner-business-service {
+  background-image: linear-gradient(
+      115deg,
+      rgba(37, 37, 37, 0.596),
+      rgba(29, 28, 28, 0.5)
+    ),
+    url(Images/Business_Services1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 72%;
+  background-attachment: scroll;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .banner-business-service {
+    background-attachment: scroll;
+  }
+  .banner-business-service {
+    background-image: url("Images/business_service_mobile.png");
+  }
+}
+
+@keyframes glow-flex {
+  5% {
+    letter-spacing: 0.2px;
+    text-shadow: 0.5px 0.5px 2px #e76e5c;
+    opacity: 0.99;
+  }
+  10% {
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 4px #ea7e6e;
+    opacity: 0.95;
+  }
+  15% {
+    letter-spacing: 0.7px;
+    text-shadow: 1.5px 1.5px 6px #e96450;
+    opacity: 0.9;
+  }
+  20% {
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px #e6543e;
+    opacity: 0.85;
+  }
+  25% {
+    letter-spacing: 1.2px;
+    text-shadow: 2.5px 2.5px 10px #e0432b;
+    opacity: 0.8;
+  }
+  30% {
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 12px #e7371c;
+    opacity: 0.75;
+  }
+}
+
+.banner-business-service-text {
+  font-size: 8vw;
+  color: white;
+  animation-name: glow-flex;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 500ms;
+  animation-timing-function: ease-in-out;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+.bgimg-1 {
+  background-image: url("Images/idea\ identification.png");
+}
+
+.bgimg-2 {
+  background-image: url("Images/legal\ foundation.png");
+}
+
+.bgimg-3 {
+  background-image: url("Images/understanding\ financial\ basics.png");
+}
+
+.bgimg-4 {
+  background-image: url("Images/business\ planning.png");
+}
+
+.bgimg-5 {
+  background-image: url("Images/Fundraising.png");
+}
+
+.bgimg-6 {
+  background-image: url("Images/pitching\ &\ termsheet.png");
+}
+
+.back-bg-color-caption {
+  background-color: rgb(255, 255, 255, 0.4);
+  height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border-business {
+  color: #af4332;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 8px;
+}
+
+.text-1 h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+}
+
+.text-2 h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 375px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4,
+  .bgimg-5,
+  .bgimg-6 {
+    background-attachment: scroll;
+  }
+  .bgimg-1 {
+    background-image: url("./Images/mobile_ideaIdentification.png");
+  }
+  .bgimg-2 {
+    background-image: url("./Images/mobile_legal\ foundation.png");
+  }
+  .bgimg-3 {
+    background-image: url("./Images/mobile_financial\ statistics.png");
+  }
+  .bgimg-4 {
+    background-image: url("./Images/mobile_business\ planning.png");
+  }
+  .bgimg-5 {
+    background-image: url("./Images/mobile_fundraising.png");
+  }
+  .bgimg-6 {
+    background-image: url("./Images/mobile_pitching\ and\ termsheet.png");
+  }
+}
+
+.text-1 {
+  color: #777;
+  background-color: white;
+  text-align: center;
+  padding: 30px 80px;
+  text-align: justify;
+  scroll-behavior: smooth;
+}
+
+.text-2 {
+  color: #ddd;
+  background-color: #5a5d61;
+  text-align: center;
+  padding: 50px 50px;
+  text-align: justify;
+  scroll-behavior: smooth;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.nav-link-btn-company-bottom-nav {
+  color: #000;
+  transform: color;
+  transition-duration: 500ms;
+}
+.nav-link-btn-company-bottom-nav:hover {
+  color: #ea7b6a;
+  transform: color;
+  transition-duration: 500ms;
+}
+
+.collapse .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+.collapse .navbar-nav .nav-item.active .nav-link,
+.collapse .navbar-nav .nav-item:hover .nav-link {
+  color: #ea7e6e;
+}
+
+.bg-none .navbar-collapse {
+  background-color: none;
+  z-index: 9;
+  text-align: center;
+}
+
+.navbar-toggler {
+  outline: none !important;
+  border: none !important;
+}
+
+@media (min-width: 992px) {
+  .hero li {
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+}
+
+#footer {
+  background: #fafafa;
+  color: #848484;
+  font-size: 14px;
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 16px;
+  padding: 0 30px;
+  outline: none;
+  margin: 1px;
+  border: 1px solid black;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+#footer .footer-newsletter form input[type="email"] {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #eaeaea;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 20px;
+}
+#footer ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-top ul li a,
+.footer-contact a {
+  color: #848484;
+  text-decoration: none;
+  transform: color;
+  transition-duration: 500ms;
+}
+
+.footer-top ul li a:hover,
+.footer-contact a:hover {
+  color: #e8715f;
+  transform: color;
+  transition-duration: 500ms;
+}
+
+.footer-icon-link {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.footer-icon-link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #000;
+  transform: scaleX(0);
+  transition: transform 500ms ease-in-out;
+  transform-origin: 50% 50%;
+}
+
+.footer-icon-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: 50% 50%;
+}
+
+.footer-icon {
+  transform: translate(0px, 0px);
+  transition-duration: 500ms;
+}
+.footer-icon:hover {
+  transform: translate(0px, -10px);
+}
+
+.n1,
+.n2 {
+  color: white;
+}
+
+.n1:hover {
+  color: #e76e5c;
+}
+
+.n2:hover {
+  color: #e76e5c;
+}
+
+/* mobile view of First Container */
+
+@media (max-width: 986px) {
+  .navbar .mobile-button_slide {
+    height: 10px !important;
+
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: inset -35px 0 0 0 white;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    font-size: 1.1rem;
+    margin-right: auto;
+  }
+
+  .navbar .mobile-view-ul .mobile-view-li {
+    height: 100%;
+  }
+
+  .navbar .mobile-view-ul .mobile-view-li {
+    padding: 35px 0;
+  }
+
+  .navbar .mobile-button_slide {
+    font-weight: 500;
+    cursor: pointer;
+    /* box-shadow: inset -25px 0 0 0 white; */
+    padding: 5px 0;
+    height: 10px !important;
+    margin: 30px auto;
+  }
+  .no-banner-heading {
+    display: none;
+  }
+  .navbar-toggler {
+    top: 10px;
+    right: 0px;
+  }
+  .navbar .logo {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+  }
+  .mobile-view {
+    display: none !important;
+  }
+  .mobile-first-text {
+    margin-top: 150px !important;
+  }
+  .mobile-view-background {
+    width: 100%;
+    height: 100%;
+    background-color: #ffdab9;
+    z-index: 1;
+  }
+  .no-display {
+    display: none;
+  }
+}

@@ -1,0 +1,313 @@
+.C3-Bigger-Container {
+  background-color: whitesmoke;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.C3-main_head-div {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+.C3-sub_head-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.C3-main_head-div h1::after {
+  content: " ";
+  position: absolute;
+  margin-top: 20px;
+  /* top: -10px; */
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #e96b56;
+  align-self: center;
+  left: calc(50% - 25px);
+}
+
+.C3-main_heading {
+  text-align: center;
+  font-size: 30px;
+  /* padding-top: 50px; */
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.C3-Sub_heading {
+  text-align: center;
+}
+.content-div-style-C3 {
+  width: 100%;
+  height: 800px;
+}
+.C3-left-col {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: url("img/ContainerThree/right-arrow-angle.png"), auto;
+}
+.C-3-text-div {
+  position: absolute;
+  top: 200px;
+  left: 180px;
+
+  width: 550px;
+  animation-name: C3-text-animation;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-direction: reverse;
+}
+@keyframes C3-text-animation {
+  0% {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+  }
+  10%,
+  90% {
+    position: absolute;
+    top: 200px;
+    opacity: 1;
+  }
+  100% {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+  }
+}
+.C-3-div-haed {
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+.C-3-div-para {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: #000000;
+  text-align: center;
+}
+.C-3-bullets-div {
+  position: absolute;
+  width: 400px;
+  top: 300px;
+  left: -100px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(90deg);
+}
+.smallCircle-C3 {
+  margin: 0px 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.bullets-img {
+  margin: 0px 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transform: rotate(270deg);
+  opacity: 0.5;
+}
+/* .smallCircle-C3-fixed {
+  position: absolute;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+} */
+.bullets-img-fixed {
+  margin: 0px 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.smallCircle-C3-fixed-1 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 135px;
+  left: 65px;
+}
+.smallCircle-C3-fixed-2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 205px;
+  left: 65px;
+}
+.smallCircle-C3-fixed-3 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 275px;
+  left: 65px;
+}
+.smallCircle-C3-fixed-4 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 345px;
+  left: 65px;
+}
+.smallCircle-C3-fixed-5 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 415px;
+  left: 65px;
+}
+.smallCircle-C3-fixed-6 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 485px;
+  left: 65px;
+}
+.C3-bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 200px;
+  padding-top: 20px;
+  animation-duration: 6s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-name: bottom-color-sider;
+}
+@keyframes bottom-color-sider {
+  0% {
+    width: 0%;
+  }
+  20%,
+  90% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+.C3-img-div {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  right: -770px;
+  top: 30px;
+  cursor: url("img/ContainerThree/left-arrow-angle.png"), auto;
+}
+
+.C3-img {
+  position: absolute;
+  width: 350px;
+  height: 650px;
+  right: 100px;
+  top: 0px;
+  border-radius: 25px;
+  z-index: 1;
+  /* transform: rotateZ(3deg); */
+  box-shadow: 0px 0px 15px 0px black;
+}
+
+@media (max-width: 986px) {
+  .C-3-bullets-div {
+    display: none;
+  }
+  .bullets-img-fixed {
+    display: none;
+  }
+  .content-div-style-C3 {
+    width: 100%;
+    height: 1000px;
+  }
+  .C3-left-col {
+    /* position: absolute; */
+    right: 0px;
+    left: 0px !important;
+    width: 100%;
+    height: 100%;
+    cursor: url("img/ContainerThree/right-arrow-angle.png"), auto;
+    
+  }
+  .C-3-text-div {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    
+    width: 100%;
+    animation-name: C3-text-animation;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+  }
+  @keyframes C3-text-animation {
+    0% {
+      position: absolute;
+      top: 0px;
+      opacity: 0;
+    }
+    10%,
+    90% {
+      position: absolute;
+      top: 50px;
+      opacity: 1;
+    }
+    100% {
+      position: absolute;
+      top: 0px;
+      opacity: 0;
+    }
+  }
+
+  .C-3-div-haed {
+    padding: 0px 50px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+  }
+  .C-3-div-para {
+    padding: 0px 40px;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+  }
+  .C3-img-div {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    right: 0px;
+    top: 320px;
+    cursor: url("img/ContainerThree/left-arrow-angle.png"), auto;
+  }
+  .C3-img {
+    position: absolute;
+    width: 300px;
+    height: 550px;
+    right: 100px;
+    top: 0px;
+   left: 70px;
+    border-radius: 25px;
+    z-index: 1;
+    /* transform: rotateZ(3deg); */
+    box-shadow: 0px 0px 15px 0px black;
+  }
+}
