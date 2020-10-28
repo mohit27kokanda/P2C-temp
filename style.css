@@ -1354,6 +1354,31 @@
     opacity: 0;
     /* margin-right: 20px; */
   }
+  .c1-text-3 {
+    color: #000000;
+    text-align: start !important;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid #000000; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: 0.15em; Adjust as needed */
+    animation: typing-4 2.5s steps(30, end),
+      blink-caret-1 0.5s step-end infinite;
+    animation-delay: 2.5s;
+    opacity: 0;
+    /* margin-right: 20px; */
+  }
+  @keyframes typing-4 {
+    0% {
+      width: 0;
+      opacity: 1;
+    }
+    70%,
+    100% {
+      width: 47%;
+      opacity: 1;
+    }
+  }
   @keyframes typing-1 {
     0% {
       width: 0;
@@ -1370,12 +1395,13 @@
     }
   }
   @keyframes typing-2 {
-    from {
+    0% {
       width: 0;
       opacity: 1;
     }
-    to {
-      width: 90%;
+    70%,
+    100% {
+      width: 76%;
       opacity: 1;
     }
   }
