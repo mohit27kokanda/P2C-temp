@@ -223,6 +223,7 @@
   z-index: 1;
   /* transform: rotateZ(3deg); */
   box-shadow: 0px 0px 15px 0px black;
+  background-color: whitesmoke;
 }
 
 @media (max-width: 986px) {
@@ -319,5 +320,34 @@
     z-index: 1;
     /* transform: rotateZ(3deg); */
     box-shadow: 0px 0px 15px 0px black;
+    background-color: whitesmoke;
+  }
+  .c3-right-arrow-div {
+    position: absolute;
+    top: 20%;
+    height: 80%;
+    width: 150px;
+    right: 20px;
+
+    z-index: 2;
+  }
+  .C3-right-arrow {
+    position: absolute;
+    top: 50%;
+    right: -16px;
+  }
+  .c3-left-arrow-div {
+    position: absolute;
+    top: 20%;
+    height: 80%;
+    width: 150px;
+    left: 20px;
+
+    z-index: 2;
+  }
+  .C3-left-arrow {
+    position: absolute;
+    top: 50%;
+    left: -5px;
   }
 }
