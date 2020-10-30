@@ -1964,7 +1964,7 @@
     /* border: 2px solid red; */
     position: absolute;
     top: 190px;
-    transform: translate(-340px, 0px);
+    transform: translate(-360px, 0px);
 
     z-index: 1;
   }
