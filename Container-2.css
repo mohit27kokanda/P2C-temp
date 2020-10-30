@@ -1964,7 +1964,7 @@
     /* border: 2px solid red; */
     position: absolute;
     top: 190px;
-    right: 110px;
+    transform: translate(-340px, 0px);
 
     z-index: 1;
   }
@@ -2687,7 +2687,7 @@
     width: 60px;
     height: 60px;
     position: absolute;
-    top: 765px;
+    bottom: -415px;
     left: 325px;
     /* left: 50%; */
     animation-name: video-button-motion;
@@ -2698,7 +2698,7 @@
   }
   .playBack-button-in-circle {
     position: absolute;
-    transform: translate(0px, 275px);
+    bottom: -410px;
     /* bottom: -400px; */
     left: 330px;
     color: white;
@@ -2719,7 +2719,7 @@
   }
   .video-liner {
     position: absolute;
-    top: 780px;
+    bottom: -410px;
     left: 35px;
     font-size: 20px;
     font-weight: 600;
