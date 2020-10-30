@@ -127,7 +127,7 @@
 .back {
   transform: rotateY(180deg);
 }
-@media (max-width: 986px) {
+@media (max-width: 512px) {
   .C6-Circle {
     width: 280px;
     height: 280px;
@@ -162,5 +162,57 @@
     margin-top: 60px;
     padding-bottom: 10px;
     margin-left: 95px;
+  }
+}
+/* *********************************************Landscape Mobile View***************************************************** */
+
+@media (min-width: 800px) and (max-width: 992px) {
+  .C6-Circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 10px 45px;
+    margin: 15px auto;
+  }
+  .flip-container,
+  .front,
+  .back {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #f1a496;
+    box-shadow: 0px 0px 10px 0px #e96c56;
+  }
+
+  /* flip speed goes here */
+  .flipper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+  }
+  .C6-front-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-top: 35px;
+    padding-bottom: 10px;
+    margin-left: 50px;
+  }
+  .Circle-Heading {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+  }
+
+  .Back-Text {
+    text-align: center;
+    padding: 0px 15px;
+    margin-top: 25px;
+    font-size: 12px;
   }
 }

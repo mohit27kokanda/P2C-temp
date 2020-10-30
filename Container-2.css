@@ -1892,19 +1892,20 @@
     height: 90vh;
     /* border: 2px solid black; */
     position: absolute;
-    top: 0px;
+    top: 120px;
+    right: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .rightParagraph {
     font-size: 16px;
-    margin-left: 20px;
+
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: normal;
     position: absolute;
-    line-height: 1.45;
+    line-height: 1.35;
     top: 0px;
     height: 100%;
     width: 100%;
@@ -1915,8 +1916,8 @@
     position: absolute;
     text-align: center;
     margin-top: 20px;
-    right: 80px;
-    font-size: 35px;
+    right: -40px;
+    font-size: 30px;
     font-weight: 600;
     font-family: "Montserrat" "Oswald", sans-serif;
     z-index: 1;
@@ -1928,14 +1929,14 @@
     width: 80px;
     height: 3px;
     background: #e96b56;
-    top: 50px;
+    top: 38px;
     left: calc(50% - 25px);
   }
   .C2-subHeading {
     position: absolute;
     text-align: center;
-    left: 20px;
-    top: 90px;
+    left: 260px;
+    top: 70px;
     width: 400px;
     z-index: 1;
     color: black;
@@ -1947,7 +1948,7 @@
     position: absolute;
 
     top: 145px;
-    left: 30px;
+    left: 60px;
   }
   .monologText {
     position: absolute;
@@ -1958,12 +1959,12 @@
   }
   .img-div {
     background-color: white;
-    width: 100%;
+    width: 70%;
     height: 500px;
     /* border: 2px solid red; */
     position: absolute;
     top: 190px;
-    left: 0px;
+    left: 50px;
     right: 0px;
     z-index: 1;
   }
@@ -1998,16 +1999,16 @@
   }
 
   .C2-bg-video {
+    position: absolute;
     opacity: 0;
-    top: 0px !important;
+    top: 190px !important;
     padding-bottom: 20px;
     width: 100%;
     height: 100%;
-    position: absolute;
   }
   .video-show {
     left: 0px;
-    top: -50px !important;
+    top: 190px !important;
     animation-name: widthIncreaseLeft;
     animation-duration: 10s;
     animation-timing-function: linear;
@@ -2633,7 +2634,7 @@
     height: 40px;
     position: absolute;
     right: 10px;
-    top: 620px;
+    top: 220px;
     border: none;
     outline: none;
     background: none;
@@ -2669,7 +2670,7 @@
   .Video-frame {
     width: 100%;
     height: 100%;
-    margin-top: 250px;
+    margin-top: 0px;
   }
   .play-button-div {
     display: block;
@@ -2686,8 +2687,8 @@
     width: 60px;
     height: 60px;
     position: absolute;
-    bottom: -55px;
-    left: 305px;
+    top: 765px;
+    left: 325px;
     /* left: 50%; */
     animation-name: video-button-motion;
     animation-timing-function: linear;
@@ -2697,8 +2698,8 @@
   }
   .playBack-button-in-circle {
     position: absolute;
-    bottom: -50px;
-    left: 310px;
+    bottom: -400px;
+    left: 330px;
     color: white;
     background-color: #e96b56;
     border-radius: 50%;
@@ -2717,17 +2718,16 @@
   }
   .video-liner {
     position: absolute;
-    bottom: -60px;
-    left: 15px;
+    top: 780px;
+    left: 35px;
     font-size: 20px;
     font-weight: 600;
     font-family: Averta, sans-serif;
     letter-spacing: 0px;
-    border-bottom: 2px solid black;
   }
   .C-2-Video-logo {
     position: absolute;
-    top: 620px;
+    top: 220px;
     left: 20px;
     z-index: 1;
   }
