@@ -736,7 +736,7 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 512px) {
   .prev,
   .next {
     cursor: pointer;
@@ -933,7 +933,7 @@
     display: none;
   }
 }
-@media (max-width: 986px) {
+@media (max-width: 512px) {
   .navbar .button_slide {
     font-weight: 500;
     cursor: pointer;
@@ -1048,7 +1048,7 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-@media (max-width: 986px) {
+@media (max-width: 512px) {
   .business-element {
     position: absolute;
     width: 350px;
@@ -1135,7 +1135,7 @@
   color: #fc6c9c;
 }
 
-@media (max-width: 986px) {
+@media (max-width: 512px) {
   .marquee-line {
     transform: rotateZ(155deg);
     position: absolute;
@@ -1259,7 +1259,7 @@
   }
 }
 
-@media (max-width: 986px) {
+@media (max-width: 512px) {
   .legal-element-1 {
     position: absolute;
     top: 305px;
@@ -1431,4 +1431,510 @@
   height: 100vh !important;
   transition-property: width, height, background-color !important;
   transition-duration: 4s !important;
+}
+
+/* *********************************************Landscape Mobile View***************************************************** */
+
+@media (min-width: 800px) and (max-width: 992px) {
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    height: 20px !important;
+    margin-top: 0;
+    padding: 0;
+    color: rgb(63, 69, 100);
+    transition: 0.6s ease;
+    border-radius: 0 1px 1px 0;
+    opacity: 1;
+    font-size: 18px;
+  }
+  .banner-heading-d {
+    right: 0;
+
+    margin: auto;
+    cursor: default;
+    width: 360px;
+    height: 300px;
+    transform: translate(0, 0);
+    bottom: 150px;
+  }
+  .banner-heading-b {
+    margin: auto;
+    position: absolute;
+    transform: translate(-220px, -80px);
+    right: 0px;
+
+    cursor: default;
+    width: 40px;
+    bottom: 65px !important;
+    height: 60px;
+    animation-name: bulb;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .banner-heading-comment {
+    margin: auto;
+    transform: translate(245px, -95px);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    cursor: default;
+    width: 30px;
+    height: 30px;
+    animation-name: comm-right;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .banner-heading-comment-left {
+    margin: auto;
+    transform: translate(0, 0);
+    right: -80px;
+    bottom: 245px;
+    transform: rotate(270deg);
+    left: 80px;
+
+    cursor: default;
+    width: 30px;
+    height: 30px;
+    animation-name: comm-left;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .banner-heading-comment-top {
+    display: none;
+  }
+  .more-size {
+    display: block;
+  }
+  .less-size {
+    display: none;
+  }
+  @keyframes comm-top {
+    from {
+      top: 32%;
+    }
+    to {
+      top: 31%;
+      right: 510px;
+    }
+  }
+  @keyframes comm-right {
+    from {
+      top: 50%;
+    }
+    to {
+      top: 47%;
+      transform: translate(250px, -95px);
+    }
+  }
+  @keyframes comm-left {
+    from {
+      top: 48%;
+    }
+    to {
+      top: 47%;
+      right: -70px;
+    }
+  }
+  @keyframes bulb {
+    from {
+      top: 35%;
+    }
+    to {
+      top: 30%;
+    }
+  }
+  .banner-heading {
+    position: absolute;
+    top: 29%;
+    left: 30px;
+    cursor: default;
+    /* animation-name: example;
+    animation-duration: 2s; */
+  }
+  @keyframes example {
+    from {
+      left: -400px;
+    }
+    to {
+      top: 22%;
+    }
+  }
+  @keyframes example-1 {
+    from {
+      left: 300px;
+    }
+    to {
+      top: 30%;
+    }
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 40%;
+    left: 30px;
+    cursor: default;
+    /* animation-name: example-1;
+    animation-duration: 2s; */
+  }
+  .f-2 {
+    font-size: 30px;
+  }
+  .f-2-1 {
+    font-size: 20px;
+  }
+  .f-3 {
+    font-size: 30px;
+  }
+  .f-3-1 {
+    font-size: 25px;
+  }
+  .f-5 {
+    font-size: 30px;
+  }
+  .f-4 {
+    font-size: 28px;
+  }
+  .f-4-1 {
+    font-size: 20px;
+  }
+  .f-5-1 {
+    font-size: 22px;
+  }
+  .image-design-none {
+    display: none !important;
+    width: 0;
+    height: 0;
+  }
+  .none-display {
+    display: none !important;
+  }
+  .none-display-1 {
+    display: none !important;
+  }
+  .slideshow-container {
+    background-color: #f0f4f4 !important;
+    width: 100% !important;
+    height: 100% !important;
+    transition-property: width, height, background-color !important;
+    transition-duration: 4s !important;
+    z-index: 2;
+  }
+  .dot {
+    display: none;
+  }
+
+  .navbar .button_slide {
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: inset -35px 0 0 0 white;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    font-size: 1.1rem;
+    margin-right: auto;
+  }
+
+  .navbar ul {
+    height: 100%;
+  }
+
+  .navbar ul li {
+    padding: 40px 0;
+  }
+
+  .navbar .button_slide {
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: inset -25px 0 0 0 white;
+    padding: 5px 0;
+    margin: 30px auto;
+  }
+  .no-banner-heading {
+    display: none;
+  }
+  .navbar-toggler {
+    top: 10px;
+    right: 0px;
+  }
+  .navbar .logo {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+  }
+  .vl-line {
+    left: -20px;
+    top: -10px;
+  }
+
+  .vr-line {
+    border-left: 2px solid rgb(91, 91, 113, 0.7);
+    height: 100vh;
+    bottom: 0;
+    position: absolute;
+    right: 5px;
+  }
+  .Scroll-div {
+    display: none;
+  }
+  .vertical-small-line {
+    display: none;
+  }
+  .image-design-none {
+    display: none;
+  }
+  .slideshow-container-nav {
+    background-color: #f0f4f4;
+    width: 100%;
+    height: 100%;
+    transition-property: width, height, background-color;
+    transition-duration: 4s;
+  }
+
+  .business-element {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    right: 40px;
+    top: 88px;
+
+    /* bottom: 0px !important; */
+  }
+  .business-large-skrew {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 250px;
+    top: 108px;
+
+    animation-name: rotate-circle;
+    animation-duration: 4s;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+
+    animation-iteration-count: infinite;
+  }
+  .business-small-skrew {
+    position: absolute;
+
+    width: 35px;
+    height: 35px;
+    right: 280px;
+    top: 148px;
+    animation-name: rotate-circle;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  /* idea arrow for mobile */
+  .arrow-div {
+    display: none;
+    /* position: absolute;
+    top: 490px;
+    right: 83px;
+    cursor: default;
+    width: 25px;
+    height: 8px;
+
+    z-index: 1 !important; */
+  }
+  .banner-heading-arrow {
+    display: none;
+    /* position: absolute;
+    cursor: default;
+    width: 20%;
+    height: 20%;
+    animation: size-increase;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 1 !important;
+    display: flex !important;
+    justify-content: flex-start;
+    overflow: hidden;
+    animation-direction: alternate; */
+  }
+
+  .marquee-line {
+    transform: rotateZ(155deg);
+    position: absolute;
+    width: 39px;
+    height: 50px;
+    top: 282px;
+    right: 127px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fc6c9c;
+  }
+
+  .marquee-line-2 {
+    transform: rotateZ(90deg);
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    top: 255px;
+    right: 107px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fc6c9c;
+  }
+
+  .legal-element-1 {
+    position: absolute;
+    top: 75px;
+    width: 350px;
+    height: 340px;
+    right: 40px;
+  }
+  .legal-element-scale {
+    position: absolute;
+    top: -70px;
+    width: 100px;
+    height: 340px;
+    right: 120px;
+    transform: rotateX(80deg);
+    animation-name: swing;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: ease-in-out;
+  }
+  .legal-element-right {
+    position: absolute;
+    width: 30px;
+    height: 45px;
+    top: 125px;
+    right: 120px;
+    animation-name: up-down-legal;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: ease-in-out;
+  }
+
+  .legal-element-left {
+    position: absolute;
+    width: 30px;
+    height: 45px;
+    top: 80px;
+    right: 200px;
+    animation-name: up-down-legal-left;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: ease-in-out;
+  }
+  .shade {
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .banner-content-1 {
+    position: absolute;
+    top: 38%;
+    left: 30px;
+    cursor: default;
+  }
+  .c1-text-1 {
+    color: #000000;
+    /* font-family: monospace; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+    /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: 0.15em; Adjust as needed */
+    animation: typing-1 2s steps(30, end), blink-caret-1 0.5s step-end infinite;
+  }
+  .c1-text-2 {
+    color: #000000;
+    text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid #000000; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: 0.15em; Adjust as needed */
+    animation: typing-2 2.5s steps(30, end),
+      blink-caret-1 0.5s step-end infinite;
+    animation-delay: 2.5s;
+    opacity: 0;
+    /* margin-right: 20px; */
+  }
+  .c1-text-3 {
+    color: #000000;
+    text-align: start !important;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid #000000; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: 0.15em; Adjust as needed */
+    animation: typing-4 2.5s steps(30, end),
+      blink-caret-1 0.5s step-end infinite;
+    animation-delay: 2.5s;
+    opacity: 0;
+    /* margin-right: 20px; */
+  }
+  @keyframes typing-4 {
+    0% {
+      width: 0;
+      opacity: 1;
+    }
+    70%,
+    100% {
+      width: 47%;
+      opacity: 1;
+    }
+  }
+  @keyframes typing-1 {
+    0% {
+      width: 0;
+      opacity: 1;
+      border-right: 0.15em solid #000000;
+    }
+    99% {
+      width: 100%;
+      opacity: 1;
+      border-right: 0.15em solid #000000;
+    }
+    100% {
+      border-right: none;
+    }
+  }
+  @keyframes typing-2 {
+    0% {
+      width: 0;
+      opacity: 1;
+    }
+    70%,
+    100% {
+      width: 76%;
+      opacity: 1;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret-1 {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #000000;
+    }
+  }
 }
