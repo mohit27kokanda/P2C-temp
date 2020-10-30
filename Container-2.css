@@ -1948,7 +1948,7 @@
     position: absolute;
 
     top: 145px;
-    left: 60px;
+    right: 60px;
   }
   .monologText {
     position: absolute;
@@ -1964,8 +1964,8 @@
     /* border: 2px solid red; */
     position: absolute;
     top: 190px;
-    left: 50px;
-    right: 0px;
+    right: 110px;
+
     z-index: 1;
   }
   .dimnishAnimation {
@@ -2698,7 +2698,8 @@
   }
   .playBack-button-in-circle {
     position: absolute;
-    bottom: -400px;
+    transform: translate(0px, 275px);
+    /* bottom: -400px; */
     left: 330px;
     color: white;
     background-color: #e96b56;
