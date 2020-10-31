@@ -1494,9 +1494,9 @@
     margin: auto;
     transform: translate(0, 0);
     right: -80px;
-    bottom: 245px;
+    bottom: 385px;
     transform: rotate(270deg);
-    left: 80px;
+    left: 110px;
 
     cursor: default;
     width: 30px;
@@ -1705,7 +1705,7 @@
     width: 320px;
     height: 320px;
     right: 40px;
-    top: 88px;
+    top: 48px;
 
     /* bottom: 0px !important; */
   }
@@ -1714,7 +1714,7 @@
     width: 40px;
     height: 40px;
     right: 250px;
-    top: 108px;
+    top: 68px;
 
     animation-name: rotate-circle;
     animation-duration: 4s;
@@ -1729,7 +1729,7 @@
     width: 35px;
     height: 35px;
     right: 280px;
-    top: 148px;
+    top: 108px;
     animation-name: rotate-circle;
     animation-duration: 4s;
     animation-timing-function: linear;
@@ -1770,7 +1770,7 @@
     position: absolute;
     width: 39px;
     height: 50px;
-    top: 282px;
+    top: 242px;
     right: 127px;
     font-size: 1.5rem;
     font-weight: 400;
@@ -1782,7 +1782,7 @@
     position: absolute;
     width: 40px;
     height: 50px;
-    top: 255px;
+    top: 215px;
     right: 107px;
     font-size: 1.5rem;
     font-weight: 400;
@@ -1791,14 +1791,14 @@
 
   .legal-element-1 {
     position: absolute;
-    top: 75px;
+    top: 35px;
     width: 350px;
     height: 340px;
     right: 40px;
   }
   .legal-element-scale {
     position: absolute;
-    top: -70px;
+    top: -110px;
     width: 100px;
     height: 340px;
     right: 120px;
@@ -1813,7 +1813,7 @@
     position: absolute;
     width: 30px;
     height: 45px;
-    top: 125px;
+    top: 85px;
     right: 120px;
     animation-name: up-down-legal;
     animation-duration: 3s;
@@ -1826,7 +1826,7 @@
     position: absolute;
     width: 30px;
     height: 45px;
-    top: 80px;
+    top: 40px;
     right: 200px;
     animation-name: up-down-legal-left;
     animation-duration: 3s;
