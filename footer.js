@@ -41,7 +41,7 @@ $(document).ready(function(){
                 <li><i class="bx bx-chevron-right"></i> <a href="freeQuote.html">Get A Free Quote</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="index.html">Company Profile</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="Blog.html">Blogs</a></li>
-                <li><i class="bx bx-chevron-right"></i> <a href="Privacy_Policy.html">Disclaimer</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="Privacy_policy.html">Disclaimer</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="Contact_Us.html">Contact Us</a></li>
             </ul>
             </div>
