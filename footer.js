@@ -87,7 +87,7 @@ $(document).ready(function(){
     </div>
     <hr>
     <!----------------------------------------footer icons -------------------------------->
-    <!--<div class="container">
+    <!--<div style="display: none;" class="container">
         <div class="row my-5">
             <div class="col-1"></div>
             <div class="col-2 text-center">
