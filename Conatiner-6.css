@@ -2,217 +2,160 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  margin-top: 50px;
 }
-.C6-Industries {
-  margin-top: 0px;
+.section-bg {
+  background-color: #f0f4f4;
 }
-
-.C6-Heading {
-  text-align: center;
-  font-size: 30px;
-  padding-top: 50px;
-  font-weight: bold;
-  font-family: "Poppins", sans-serif;
-  height: 120px;
-  /* text-decoration: none; */
-}
-.C6-Heading-Div h2::after {
-  content: " ";
-  position: absolute;
-  margin-top: 20px;
-  /* top: -10px; */
+section {
+  padding: 60px 0;
   display: block;
+}
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+
   width: 50px;
   height: 3px;
   background: #e96b56;
-  align-self: center;
+  margin-top: 50px;
+  top: auto;
   left: calc(50% - 25px);
 }
-.C6-Detail-heading {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
+.pt-5,
+.py-5 {
+  padding-top: 3rem !important;
 }
-.C6-row-1 {
+.services .icon-box {
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+}
+.services .icon-box {
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 6px;
+  background: #fff;
+}
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-.C6-row-2 {
-  padding: 30px 0px;
-  /* border: 2px solid blue; */
-}
-.C6-Circle {
-  width: 100%;
-  height: 250px;
-  border-radius: 50%;
-
-  display: flex;
   justify-content: center;
-  align-items: center;
-
-  /* padding: 30px; */
-}
-
-.Circle-Heading {
-  text-align: center;
-  font-size: 25px;
-  font-weight: 600;
-  color: black;
-}
-
-.Back-Text {
-  text-align: center;
-  margin-top: 80px;
-}
-
-.C6-front-icon {
-  width: 70px;
-  height: 70px;
-  display: flex;
-  margin-top: 50px;
-  margin-left: 80px;
-}
-/* entire container, keeps perspective */
-
-.flip-container {
-  perspective: 1000px;
-}
-
-/* flip the pane when hovered */
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-  transform: rotateY(180deg);
-  border: 5px solid #e96c56;
-}
-
-.flip-container,
-.front,
-.back {
-  width: 100%;
-  height: 250px;
-  border-radius: 50%;
-  border: 5px solid #f1a496;
-  box-shadow: 0px 0px 10px 0px #e96c56;
-}
-
-/* flip speed goes here */
-.flipper {
-  width: 100%;
-  height: 250px;
-  border-radius: 50%;
-  transition: 0.6s;
-  transform-style: preserve-3d;
-
+  transition: ease-in-out 0.3s;
   position: relative;
 }
-
-/* hide back of pane during swap */
-.front,
-.back {
-  backface-visibility: hidden;
-
+.services .icon-box .icon svg {
   position: absolute;
   top: 0;
   left: 0;
 }
-
-/* front pane, placed above back */
-.front {
-  z-index: 2;
-  /* for firefox 31 */
-  transform: rotateY(0deg);
+.services .icon-box .icon i {
+  font-size: 36px;
+  transition: 0.5s;
+  position: relative;
+}
+.services .iconbox-blue i {
+  color: #47aeff;
+}
+.services .icon-box i {
+  float: left;
+  color: #e6573f;
+  /* font-size: 40px; */
+}
+.services .icon-box h4 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 22px;
+}
+.services .icon-box h4 {
+  margin-left: 70px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+.services .iconbox-orange i {
+  color: #ffa76e;
 }
 
-/* back, initially hidden pane */
-.back {
-  transform: rotateY(180deg);
+.services .icon-box .icon svg path {
+  transition: 0.5s;
+  fill: #f5f5f5;
 }
-@media (max-width: 512px) {
-  .C6-Circle {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    padding: 10px 45px;
-    margin: 15px auto;
-  }
-  .flip-container,
-  .front,
-  .back {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    border: 5px solid #f1a496;
-    box-shadow: 0px 0px 10px 0px #e96c56;
-  }
-
-  /* flip speed goes here */
-  .flipper {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    transition: 0.6s;
-    transform-style: preserve-3d;
-
-    position: relative;
-  }
-  .C6-front-icon {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    margin-top: 60px;
-    padding-bottom: 10px;
-    margin-left: 95px;
-  }
+.services .iconbox-blue i {
+  color: #47aeff;
 }
-/* *********************************************Landscape Mobile View***************************************************** */
+.services .iconbox-teal i {
+  color: #11dbcf;
+}
+.services .iconbox-pink i {
+  color: #e80368;
+}
+.services .iconbox-yellow i {
+  color: #ffbb2c;
+}
+.services .iconbox-red i {
+  color: #ff5828;
+}
+.services .iconbox-orange:hover .icon path {
+  fill: #ffa76e;
+}
+.services .iconbox-blue:hover .icon path {
+  fill: #47aeff;
+}
+.services .iconbox-orange:hover .icon path {
+  fill: #ffa76e;
+}
+.services .iconbox-pink:hover .icon path {
+  fill: #e80368;
+}
+.services .iconbox-yellow:hover .icon path {
+  fill: #ffbb2c;
+}
+.services .iconbox-red:hover .icon path {
+  fill: #ff5828;
+}
 
-@media (min-width: 800px) and (max-width: 992px) {
-  .C6-Circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    padding: 10px 45px;
-    margin: 15px auto;
-  }
-  .flip-container,
-  .front,
-  .back {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #f1a496;
-    box-shadow: 0px 0px 10px 0px #e96c56;
-  }
+.services .iconbox-teal:hover .icon path {
+  fill: #11dbcf;
+}
+.services .iconbox-red:hover .icon i {
+  color: #fff;
+}
+.services .iconbox-yellow:hover .icon i {
+  color: #fff;
+}
+.services .iconbox-pink:hover .icon i {
+  color: #fff;
+}
+.services .iconbox-orange:hover .icon i {
+  color: #fff;
+}
+.services .iconbox-blue:hover .icon i {
+  color: #fff;
+}
+.services .iconbox-teal:hover .icon i {
+  color: #fff;
+}
+.services .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+}
+.services .icon-box h4 a {
+  color: #111;
+  transition: ease-in-out 0.3s;
+}
 
-  /* flip speed goes here */
-  .flipper {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    transition: 0.6s;
-    transform-style: preserve-3d;
-
-    position: relative;
-  }
-  .C6-front-icon {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    margin-top: 35px;
-    padding-bottom: 10px;
-    margin-left: 50px;
-  }
-  .Circle-Heading {
-    text-align: center;
-    font-size: 15px;
-    font-weight: 600;
-    color: black;
-  }
-
-  .Back-Text {
-    text-align: center;
-    padding: 0px 15px;
-    margin-top: 25px;
-    font-size: 12px;
-  }
+.services .icon-box p {
+  text-align: left;
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 0;
 }
