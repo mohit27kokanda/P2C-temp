@@ -247,7 +247,7 @@
           </div>
             
 
-            <!-------------------------------------------EVENTS-------------------------------------------------------------------->
+  <!-------------------------------------------EVENTS-------------------------------------------------------------------->
   <div class="container mt-5">
     <div class="row mx-0 my-5">
       <div class="col">
@@ -359,6 +359,7 @@
 
     <div id="video-container" class="video-container">
       <div>
+        <!-- <span class="video-close-btn my-0">&times;</span> -->
         <video id="player" controls></video>
       </div>
     </div>
@@ -371,125 +372,124 @@
           <span class="close">&times;</span>
           <h3 class="text-center">Events</h3>
           <hr class="w-100">
+
           <!---------------------------------form ------------------------------------->
-          <form onsubmit="return confirm('Do you really want to submit the form?');" method="GET">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-6 p-3">
-                <input type="text" class="w-100" name="name" id="name" placeholder="Your Name*" required >
+          <form id="registerEvent">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-6 p-2">
+                  <input type="text" class="w-100" name="name" id="name" placeholder="Your Name*" required >
+                </div>
+                <div class="col-12 col-md-6 p-2">
+                  <input type="tel" class="w-100" name="phone" id="phone" placeholder="Phone*" required >
+                </div>
               </div>
-              <div class="col-12 col-md-6 p-3">
-                <input type="tel" class="w-100" name="phone" id="phone" placeholder="Phone*" required >
+    
+              <div class="row">
+                <div class="col-12 p-2">
+                  <input type="text" class="w-100" name="address" id="address" placeholder="Your Address*" required>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col-12 col-md-6 p-2">
+                  <input type="email" class="w-100" name="email" id="email" placeholder="Email*" required>
+                </div>
+                <div class="col-12 col-md-6 p-2">
+                  <input type="text" class="w-100" name="business_name" id="businessName" placeholder="Business Name*" required>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col-12 col-md-6 p-2">
+                    <input type="number" class="w-100" name="business_tenure" id="businessTenure" placeholder="Business Tenure in months*" required>
+                </div>
+                <div class="col-12 col-md-6 p-2">
+                  <input type="text" class="w-100" name="business_event" id="eventType" value="" disabled>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col-12 p-2">
+                  <input type="text" class="w-100" name="business_idea" id="businessIdea" placeholder="Business Idea*" required>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col-12 p-2">
+                  <textarea row="5" class="w-100" name="questions" id="query" placeholder="Questions would like to answered during event*" required></textarea>
+                </div>
+              </div>
+    
+              <div class="row">
+                <div class="col text-center">
+                    <input class="press" type="submit" name="submit" value="submit">
+                </div>
               </div>
             </div>
-  
-            <div class="row">
-              <div class="col-12 p-3">
-                <input type="text" class="w-100" name="address" id="address" placeholder="Your Address*" required>
-              </div>
-            </div>
-  
-            <div class="row">
-              <div class="col-12 col-md-6 p-3">
-                <input type="email" class="w-100" name="email" id="email" placeholder="Email*" required>
-              </div>
-              <div class="col-12 col-md-6 p-3">
-                <input type="text" class="w-100" name="businessName" id="businessName" placeholder="Business Name*" required>
-              </div>
-            </div>
-  
-            <div class="row">
-              <div class="col-12 col-md-6 p-3">
-                  <input type="text" class="w-100" name="businessTenure" id="businessTenure" placeholder="Business Tenure*" required>
-              </div>
-              <div class="col-12 col-md-6 p-3">
-                <input type="text" class="w-100" name="eventType" id="eventType" value="" disabled>
-              </div>
-            </div>
-  
-            <div class="row">
-              <div class="col-12 p-3">
-                <input type="text" class="w-100" name="businessIdea" id="businessIdea" placeholder="Business Idea*" required>
-              </div>
-            </div>
-  
-            <div class="row">
-              <div class="col-12 p-3">
-                <textarea row="5" class="w-100" name="query" id="query" placeholder="Questions would like to answered during event*" required></textarea>
-              </div>
-            </div>
-  
-            <div class="row">
-              <div class="col text-center">
-                  <input class="press" type="submit" name="submit" value="submit">
-              </div>
-            </div>
-            
-          </div>
           </form>
+
         </div>
   
       </div>
 
            
-            <div id="footer" class="my-0">
-        
-            </div>
-        
-            <!-- JS, Popper.js, and jQuery -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        
-            <script type="text/javascript" src="./footer.js"></script>
+      <div id="footer" class="my-0"></div>
 
-            
+      <!-- JS, Popper.js, and jQuery -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+      <script type="text/javascript" src="./footer.js"></script>
+      
+      <script type="text/javascript">
+          $(document).ready(function(){
+              $(window).scroll(function(){
+                  var positiontop = $(document).scrollTop();
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $(window).scroll(function(){
-                    var positiontop = $(document).scrollTop();
-                    console.log(positiontop);
+                  if((positiontop>225) && (positiontop<701)){
+                      $('#aboutid').addClass('animated bounceInRight');
+                  }
 
-                    if((positiontop>225) && (positiontop<701)){
-                        $('#aboutid').addClass('animated bounceInRight');
-                    }
+                  if((positiontop>739) && (positiontop<1239)){
+                      $('#visionid').addClass('animated bounceInLeft');
+                  }
 
-                    if((positiontop>739) && (positiontop<1239)){
-                        $('#visionid').addClass('animated bounceInLeft');
-                    }
+                  if((positiontop>1336) && (positiontop<1871)){
+                      $('#missionid').addClass('animated bounceInRight');
+                  }
 
-                    if((positiontop>1336) && (positiontop<1871)){
-                        $('#missionid').addClass('animated bounceInRight');
-                    }
+                  if((positiontop>2005) && (positiontop<2969)){
+                      $('#workid').addClass('animated bounceInLeft');
+                  }
+              });
+          });
 
-                    if((positiontop>2005) && (positiontop<2969)){
-                        $('#workid').addClass('animated bounceInLeft');
-                    }
-
-                });
-            });
-
-        
-        </script>
+      
+      </script>
 
 <script>
   $(document).ready(function(){
 
-  /* opening the form */
-  var modal = document.getElementById("myModal");
-  var span = document.getElementsByClassName("close")[0];
-  var videoContainer = document.getElementById("video-container");
-  // var navButton = document.getElementById("navbarOnClick");
-  // var navToggle = docement.getElementByID("navbarNav");
+    /* opening the form */
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
+    var videoContainer = document.getElementById("video-container");
+    // var navButton = document.getElementById("navbarOnClick");
+    // var navToggle = docement.getElementByID("navbarNav");
 
-  $('.formButton').on('click', event=>{
-    const curr = $(event.currentTarget);
-    const type = curr.val();
-    modal.style.display = "block";
+    // video player
+    const player = document.getElementById('player');
 
-    document.getElementById('eventType').value = type;
-  });
+    $('.formButton').on('click', event=>{
+      const curr = $(event.currentTarget);
+      const type = curr.val();
+      modal.style.display = "block";
+
+      document.getElementById('eventType').value = type;
+    });
 
   span.onclick = function() {
     modal.style.display = "none";
@@ -500,79 +500,83 @@
       modal.style.display = "none";
     }
     if(event.target == videoContainer){
+      player.src=null;
       $(videoContainer).removeClass('video-active');
     }
 
   }
 
-  /*********playing video ********************/
-  const player = document.getElementById('player');
-  $('.videoButton').on('click', (event)=>{
-    player.src = $(event.currentTarget).attr('data-video-url');
-    player.load();
-    $(videoContainer).addClass('video-active');
-    player.play();
+    /*********playing video ********************/
+    $('.videoButton').on('click', (event)=>{
+      player.src = $(event.currentTarget).attr('data-video-url');
+      player.load();
+      $(videoContainer).addClass('video-active');
+      player.play();
 
-  });
-
-  $('.video-close-btn').on('click', ()=>{
-    $('.video-container').removeClass('video-active');
-  })
-
-  /***********appearing events****************/
-  const upcomingBtn = $('.upcoming-btn')[0];
-  const closedBtn = $('.closed-btn')[0];
-
-  const closedEvents = $('.closed-events')[0];
-  const upcomingEvents = $('.upcoming-events')[0];
-
-  $(upcomingBtn).on('click', ()=>{
-    $(upcomingBtn).css({
-      opacity: '1'
-    });
-    $(closedBtn).css({
-      opacity: '0.5'
     });
 
-    $(upcomingEvents).css({
-      display: 'block'
-    });
-    $(closedEvents).css({
-      display: 'none' 
-    });
-  });
+    $('.video-close-btn').on('click', ()=>{
+      player.src=null;
+      $('.video-container').removeClass('video-active');
+    })
 
-  $(closedBtn).on('click', ()=>{
-    $(closedBtn).css({
-      opacity: '1'
+    /***********appearing events****************/
+    const upcomingBtn = $('.upcoming-btn')[0];
+    const closedBtn = $('.closed-btn')[0];
+
+    const closedEvents = $('.closed-events')[0];
+    const upcomingEvents = $('.upcoming-events')[0];
+
+    $(upcomingBtn).on('click', ()=>{
+      $(upcomingBtn).css({
+        opacity: '1'
+      });
+      $(closedBtn).css({
+        opacity: '0.5'
+      });
+
+      $(upcomingEvents).css({
+        display: 'block'
+      });
+      $(closedEvents).css({
+        display: 'none' 
+      });
     });
-    $(upcomingBtn).css({
-      opacity: '0.5'
+
+    $(closedBtn).on('click', ()=>{
+      $(closedBtn).css({
+        opacity: '1'
+      });
+      $(upcomingBtn).css({
+        opacity: '0.5'
+      });
+      $(closedEvents).css({
+        display: 'block' 
+      });
+      $(upcomingEvents).css({
+        display: 'none'
+      });
+
     });
-    $(closedEvents).css({
-      display: 'block' 
-    });
-    $(upcomingEvents).css({
-      display: 'none'
+
     });
 
-  });
+    // $(navButton).on("click",()=>{
+    //   navToggle.classList.toggle("background-company-color");
+    // });
 
-  });
+    /* on submit form */
+    function successSubmit(){
+      alert("Form Submitted Successfully");
+    }
 
-  // $(navButton).on("click",()=>{
-  //   navToggle.classList.toggle("background-company-color");
-  // });
-
-  /* on submit form */
-  function successSubmit(){
-    alert("Form Submitted Successfully");
-  }
-
-</script>
+  </script>
  <script src="navBg.js"></script>
 
  <script src="C2.js"></script>
+
+ <script type="text/javascript" src="./handlingEventForm.js"></script>
+
     </body>
 
 </html>

@@ -55,7 +55,7 @@
     </div>
 
     <!----------------------------starting of form--------------------->
-    <form>
+    <form id="getAFreeQuoteForm">
     <div class="container my-5">
         <div class="row">
 
@@ -370,7 +370,7 @@
                         <div class="row"><div class="col labels">WhatsApp/Skype ID</div></div>
                         <div class="row">
                             <div class="col">
-                                <input class="input100" type="email" id="otherContact" name="otherContact" value="">
+                                <input class="input100" type="text" id="whatsapp_skype" name="whatsapp_skype" value="">
                                 <div class="bottom-border w-100"></div>
                             </div>
                         </div>
@@ -382,7 +382,7 @@
                         <div class="row"><div class="col labels">What’s Your Project All About*</div></div>
                         <div class="row">
                             <div class="col">
-                                <textarea class="input100 required-inp" rows="5" cols="10" id="aboutProject" name="aboutProject" value="" required></textarea>
+                                <textarea class="input100 required-inp" rows="5" cols="10" id="project_idea" name="project_idea" value="" required></textarea>
                                 <div class="bottom-border w-100"></div>
                                 <span class="text-danger font-weight-bold warning-text">Please complete this required field.</span>
                             </div>
@@ -410,12 +410,12 @@
                             <div class="col">
                                 <div class="row my-2">
                                     <div class="col rounded checkbox-border mx-2 px-0 px-3 checkbox-comp">
-                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="businessSupport" value="Incubation Support"></div>
+                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="businesssupport" value="1"></div>
                                         <div class="img-contain"><img src="icons/business incubator.png"></div>
                                         <label class="text-justified">Incubation Support</label>
                                     </div>
                                     <div class="col rounded checkbox-border mx-2 px-0 px-3 checkbox-comp">
-                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="businessSupport" value="Idea Identification & Assessment Support"></div>
+                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="businesssupport" value="2"></div>
                                         <div class="img-contain"><img src="icons/Idea identification.png"></div>
                                         <label class="text-justified">Idea Identification & Assessment Support</label>
                                     </div>
@@ -428,12 +428,12 @@
                                 <div class="row my-2">
 
                                     <div class="col rounded checkbox-border mx-2 px-0 px-3 checkbox-comp">
-                                            <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="businessSupport" value="New Ventures Legal Foundation Building Support"></div>
+                                            <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="businesssupport" value="3"></div>
                                             <div class="img-contain"><img src="icons/Venture.png"></div>
                                             <label>New Ventures Legal Foundation Building Support</label>
                                     </div>
                                     <div class="col rounded checkbox-border mx-2 px-0 px-3 checkbox-comp">
-                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="businessSupport" value="Financial Basics Creation Support As Start Up"></div>
+                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="businesssupport" value="4"></div>
                                         <div class="img-contain"><img src="icons/Financial.png"></div>
                                         <label>Financial Basics Creation Support As Start Up</label>
                                     </div>
@@ -445,12 +445,12 @@
                             <div class="col">
                                 <div class="row my-2">
                                     <div class="col rounded checkbox-border mx-2 px-0 px-3 checkbox-comp">
-                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="businessSupport" value="Business Planning For New Ventures"></div>
+                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="businesssupport" value="5"></div>
                                         <div class="img-contain"><img src="icons/Business_planning.png"></div>
                                         <label>Business Planning For New Ventures</label>
                                     </div>
                                     <div class="col rounded checkbox-border mx-2 px-0 px-3 checkbox-comp">
-                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="businessSupport" value="Fund Raising & Valuation Of New Venture Support"></div>
+                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="businesssupport" value="6"></div>
                                         <div class="img-contain"><img src="icons/Fund_raising.png"></div>
                                         <label>Fund Raising & Valuation Of New Venture Support</label>
                                     </div>
@@ -462,7 +462,7 @@
                             <div class="col">
                                 <div class="row my-2">
                                     <div class="col rounded checkbox-border mx-2 px-0 px-3 checkbox-comp">
-                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="businessSupport" value="Pitching & Term Sheet Creation as New Venture"></div>
+                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="businesssupport" value="7"></div>
                                         <div class="img-contain"><img src="icons/pitching.png"></div>
                                         <label>Pitching & Term Sheet Creation as New Venture</label>
                                     </div>
@@ -483,13 +483,13 @@
                                 <div class="row my-2">
                                     
                                     <div class="col rounded checkbox-border mx-2 px-0 px-3 checkbox-comp">
-                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="itSupport" value="Creating Mobile Apps"></div>
+                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="itsupport" value="1"></div>
                                         <div class="img-contain"><img src="icons/mobile.png"></div>
                                         <label>Creating Mobile Apps</label>
                                     </div>
                                     
                                     <div class="col rounded checkbox-border mx-2 px-0 px-3 checkbox-comp">
-                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="itSupport" value="Web Development"></div>
+                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="itsupport" value="2"></div>
                                         <div class="img-contain"><img src="icons/laptop.png"></div>
                                         <label>Web Development</label>
                                     </div>
@@ -501,12 +501,12 @@
                             <div class="col">
                                 <div class="row my-2">
                                     <div class="col rounded checkbox-border mx-2 px-0 px-3 checkbox-comp">
-                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="itSupport" value="IT Consulting Services"></div>
+                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="itsupport" value="3"></div>
                                         <div class="img-contain"><img src="icons/it-consult.png"></div>
                                         <label>IT Consulting Services</label>
                                     </div>
                                     <div class="col rounded checkbox-border mx-2 px-0 px-3 checkbox-comp">
-                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="itSupport" value="Dedicated Team Service"></div>
+                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="itsupport" value="4"></div>
                                         <div class="img-contain"><img src="icons/team.png"></div>
                                         <label>Dedicated Team Service</label>
                                     </div>
@@ -518,7 +518,7 @@
                             <div class="col">
                                 <div class="row my-2">
                                     <div class="col rounded checkbox-border mx-2 px-0 px-3 checkbox-comp">
-                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="itSupport" value="Partnership Opportunities"></div>
+                                        <div class="flex-row text-right"><input type="checkbox" class="checkbox-ele" name="itsupport" value="5"></div>
                                         <div class="img-contain"><img src="icons/partnership.png"></div>
                                         <label>Partnership Opportunities</label>
                                     </div>
@@ -543,7 +543,7 @@
                 <div class="row"><div class="col business-it-support-heading h6">Budget Range*</div></div>
                 <div class="row">
                     <div class="col flex-row">
-                        <select id="budget" name="budget" value="Select your budget range" class="w-100"  required>
+                        <select id="budget_range" name="budget_range" value="Select your budget range" class="w-100"  required>
                             <option>Less than &#x20B9;1,00,000</option>
                             <option>Between &#x20B9;1,00,000 and &#x20B9;2,50,000</option>
                             <option>Between &#x20B9;2,50,000 and &#x20B9;5,00,000</option>
@@ -556,7 +556,7 @@
                 <div class="row"><div class="col business-it-support-heading h6">Tentative Starting Time*</div></div>
                 <div class="row">
                     <div class="col flex-row">
-                        <select id="start-time" name="start-time" value="Select your budget range" class="w-100"  required>
+                        <select id="start_time" name="start_time" value="Select your budget range" class="w-100"  required>
                             <option>Immediately</option>
                             <option>Within A Month</option>
                             <option>1-3 Month</option>
@@ -589,5 +589,6 @@
 	<script type="text/javascript" src="./footer.js"></script><!--for footer adding-->
     <script src="./freeQuote_main.js"></script>
 
+    <script src="./handlingGetAFreeQuote.js"></script>
 </body>
 </html>

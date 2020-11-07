@@ -67,7 +67,7 @@
   
               </li>
               <li class="nav-btn nav-item " onclick=""><strong><a class="nav-color-item" href="Blog.html" style="color: black;" >Blogs</a></strong></li>
-              <li class="nav-btn nav-item " onclick=""><strong><a class="nav-color-item" href="Contact_Us.html" style="color:black; ;">Contact Us</a></strong></li>
+              <li class="nav-btn nav-item " onclick=""><strong><a class="nav-color-item" href="Contact_Us.html" style="color:black;" rgb(153, 96, 96);">Contact Us</a></strong></li>
               <li class="button_slide slide_right nav-item "><strong><a class="nav-color-item" href="freeQuote.html" style="color: black;">Get a Free Quote</a></strong></li>
               </ul>
           </div>
@@ -77,14 +77,48 @@
 </div>
 
 <div class="contact-section">
+
+  
+
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-none rounded" style="margin-top: -20px;">
+    <a class="navbar-brand" href="index.html" style="margin-left: 5%;">
+      <img src="css/Images/logo1.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    Power2Create
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:black; font-size: 30px; transform: scaleX(1.3);"></i></span>
+  </button>
+  
+    <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample02">
+      <ul class="navbar-nav hero">
+        <li class="nav-item">
+          <a class="nav-link" href="company.html" style="font-family: 'Ubuntu', sans-serif;">Company</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Service_Intro.html" style="font-family: 'Ubuntu', sans-serif;">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Blog.html" style="font-family: 'Ubuntu', sans-serif;">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact_Us.html" style="font-family: 'Ubuntu', sans-serif;">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link button glow-button" href="freeQuote.html" style="font-family: 'Ubuntu', sans-serif;">Get A Free Quote</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+
   <h1 id="contact" style="margin-top: 40px;">Contact Us</h1>
   <div class="border" id="border"></div>
-  <form class="contact-form" action="index.html" method="post">
-    <input type="text" class="contact-form-text" placeholder="Your name" id="name">
-    <input type="email" class="contact-form-text" placeholder="Your email" id="mail">
-    <input type="text" class="contact-form-text" placeholder="Write Your Subject" id="subject">
-    <textarea class="contact-form-text" placeholder="Your message" id="message"></textarea>
-    <input type="submit" class="contact-form-btn" value="Send" id="button">
+  <form class="contact-form" id="contact-form">
+    <input type="text" name="name" class="contact-form-text" placeholder="Your name" id="name" required>
+    <input type="email" name="email" class="contact-form-text" placeholder="Your email" id="mail" required>
+    <input type="text" name="subject" class="contact-form-text" placeholder="Write Your Subject" id="subject" required>
+    <textarea name="message" class="contact-form-text" placeholder="Your message" id="message" required></textarea>
+    <input name="submit" type="submit" class="contact-form-btn" value="Send" id="button">
   </form>
 </div>
 
@@ -95,8 +129,8 @@
       
 <div class="contact-info" style="margin: 0 auto;" id="info">
     <div class="card">
-      <a href="https://accounts.google.com/ServiceLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&osid=1&service=mail&ss=1&ltmpl=default&rm=false&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><i class="card-icon far fa-envelope" style="color: white;"></i></a>
-      <p>sales@power2create.in</p>
+      <a href="mailto:info@power2create.in" target="_blank"><i class="card-icon far fa-envelope" style="color: white;"></i></a>
+      <p>info@power2create.in</p>
     </div>
 
     <div class="card">
@@ -129,7 +163,6 @@
                 $(document).ready(function(){
                     $(window).scroll(function(){
                         var positiontop = $(document).scrollTop();
-                        console.log(positiontop);
     
                         if((positiontop>0) && (positiontop<6)){
                             $('#contact').addClass('animated bounceInRight');
@@ -171,6 +204,8 @@
             </script>
  <script src="navBg.js"></script>
  <script src="C2.js"></script>
+
+ <script src="./handleContactForm.js"></script>
 
   </body>
 </html>

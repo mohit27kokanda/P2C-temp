@@ -10,9 +10,20 @@ $(document).ready(function(){
             <p>Subscribe to our newsletter for latest updates.</p>
             </div>
             <div class="col-lg-6">
-            <form method="post" id="newsletter" role="form">
-                <input class="w-100" type="email" placeholder="Enter your email" name="email" required><input type="submit" value="Subscribe">
-            </form>
+                <form id="newsletterForm">
+                    <input 
+                        class="w-100" 
+                        type="email"
+                        placeholder="Enter your email" 
+                        name="email" 
+                        required
+                    >
+                    <input 
+                        type="submit" 
+                        name="submit-sub" 
+                        value="Subscribe"
+                    >
+                </form>
             </div>
         </div>
         </div>
@@ -30,7 +41,7 @@ $(document).ready(function(){
                 <strong>Sales:</strong><a href="tel:+91 9311465556">&nbsp;+91 9311-465-556</a><br>
                 <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong><a
                 href="tel:+91 9311986663">&nbsp;+91 9311-986-663</a><br></a><br>
-                <strong>Email:</strong><a href="mailto:sales@power2create.in">&nbsp;sales@power2create.in</a><br>
+                <strong>Email:</strong><a href="mailto:info@power2create.in">&nbsp;info@power2create.in</a><br>
             </p>
 
             </div>
@@ -87,7 +98,7 @@ $(document).ready(function(){
     </div>
     <hr>
     <!----------------------------------------footer icons -------------------------------->
-    <!--<div style="display: none;" class="container">
+    <!--<div class="container">
         <div class="row my-5">
             <div class="col-1"></div>
             <div class="col-2 text-center">
@@ -144,4 +155,35 @@ $(document).ready(function(){
 `;
 
     $('#footer').append(footer);
+    
+    // handling footer form data
+    document.getElementById("newsletterForm").onsubmit = e => {
+        e.preventDefault();
+        const form  = {};
+        form[e.target[0].name] = e.target[0].value;
+
+        const url = "https://p2c-backend-api.herokuapp.com/api/newsletter/";
+        
+        console.log(form);
+
+        fetch(url, {
+            method: "POST",
+            body: JSON.stringify(form),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => {
+            if(response.ok){
+                alert("Thank you for subscribing for our newsletter.");  
+                window.location.reload();  
+            }else{
+                alert("Subscription request unsuccessful. Try again.");
+            }
+        })
+        .catch(err => {
+            alert("Subscription request unsuccessful. Try again.");
+        });
+
+    };
 });
