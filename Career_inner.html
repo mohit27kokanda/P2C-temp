@@ -170,61 +170,59 @@
         <h3 class="text-center">UI/UX Designer</h3>
         <hr class="w-100">
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 p-3">
-              <input type="text" class="w-100" name="name" id="name" placeholder="Your Name*" required >
-            </div>
-            <div class="col-12 col-md-6 p-3">
-              <input type="tel" class="w-100" name="phone" id="phone" placeholder="Phone*" required >
-            </div>
-          </div>
 
-          <div class="row">
-            <div class="col-12 p-3">
-              <input type="text" class="w-100" name="address" id="address" placeholder="Past Experience" required>
+          <!-- start of form-->
+          <form id="career_form">
+            <div class="row">
+                <div class="col-12 col-md-6 p-3">
+                  <input type="text" class="w-100" name="name" id="name" placeholder="Your Name*" required>
+                </div>
+                <div class="col-12 col-md-6 p-3">
+                  <input type="tel" class="w-100" name="phone" id="phone" placeholder="Phone*" required>
+                </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col-12 col-md-6 p-3">
-              <input type="email" class="w-100" name="email" id="email" placeholder="Email*" required>
+            <div class="row">
+              <div class="col-12 col-md-6 p-3">
+                <input type="email" class="w-100" name="email" id="email" placeholder="Email*" required>
+              </div>
+              <div class="col-12 col-md-6 p-3">
+                <input type="text" class="w-100" name="degree" id="qualificationDegree" placeholder="Qualification Degree*" required>
+              </div>
             </div>
-            <div class="col-12 col-md-6 p-3">
-              <input type="text" class="w-100" name="businessName" id="businessName" placeholder="Project Link OR Attach file below*" required>
+            
+            <div class="row">
+              <div class="col-12 p-3">
+                <input type="text" class="w-100" name="past_project" id="pastExperience" placeholder="Past Project Experience*" required>
+              </div>
             </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12 col-md-6 p-3">
-				<input type="text" class="w-100" name="businessTenure" id="businessTenure" placeholder="Qualification Degree*" required>
-            </div>
-            <div class="col-12 col-md-6 p-3">
-              <input type="file" class="w-100" name="businessIdea" id="businessIdea" value="Choose File" required>
-                  </div>
-          </div>
-
-          <div class="row">
             
 
-            <div class="col-12 col-md-6 p-3">
-              <input type="text" class="w-100" name="eventType" id="eventType" value="" disabled>
+            <div class="row">
+              <div class="col-12 col-md-6 p-3">
+                <input type="text" class="w-100" name="role" id="eventType" value="" disabled>
+              </div>
+              <div class="col-12 col-md-6 p-3">
+                  <label for="files" class="btn"><span>Upload CV*</span></label>
+                  <input id="files" name="cv" style="" type="file">
+              </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col-12 p-3">
-              <textarea row="5" class="w-100" name="query" id="query" placeholder="Message" required></textarea>
+            <div class="row">
+              <div class="col-12 p-3">
+                <textarea row="5" class="w-100" name="message" id="query" placeholder="Message" required></textarea>
+              </div>
             </div>
-          </div>
 
-          <hr class="w-100">
+            <hr class="w-100">
 
-          <div class="row">
-            <div class="col text-center">
-                <input type="submit" name="submit" value="Send Application">
+            <div class="row">
+              <div class="col text-center">
+                  <input type="submit" name="submit" value="Send Application">
+              </div>
             </div>
-          </div>
-          
+          </form>
+
         </div>
 
       </div>
@@ -233,9 +231,7 @@
 
 
     <!--- adding footer here-->
-      <div id="footer" class="my-5">
-          
-      </div>
+      <div id="footer" class="my-0"></div>
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -244,6 +240,8 @@
 
     <script type="text/javascript" src="./footer.js"></script>
 
+    <script type="text/javascript" src="./handlingForm.js"></script>    
+    
     <script>
       var modal = document.getElementById("myModal");
       var span = document.getElementsByClassName("close")[0];
@@ -252,7 +250,6 @@
         const curr = $(event.currentTarget);
         const type = curr.val();
         modal.style.display = "block";
-    
         document.getElementById('eventType').value = type;
       });
     
@@ -265,8 +262,7 @@
           modal.style.display = "none";
         }
       }
-    
-    
+
     </script>
     
 </body>
