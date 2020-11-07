@@ -24,11 +24,11 @@ document.getElementById("registerEvent").onsubmit = e => {
         .then(response => {
             if(response.ok){
                 alert("Form submitted successfully");
+                window.location.reload();
             }
         })
         .catch(error => {
             alert("Form not submitted.");
         })
-        window.location.reload();
     }
 };

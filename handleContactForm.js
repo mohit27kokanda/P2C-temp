@@ -23,10 +23,10 @@ document.getElementById("contact-form").onsubmit = e =>{
     .then(response => {
         if(response.ok){
             alert("Form submitted successfully");    
+            window.location.reload();
         }
     })
     .catch(err => {
         alert("Form not submitted");
     });
-    window.location.reload();
 };

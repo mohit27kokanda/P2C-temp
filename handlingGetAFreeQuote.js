@@ -33,13 +33,13 @@ document.getElementById("getAFreeQuoteForm").onsubmit = e => {
     .then(response => {
         if(response.ok){
             alert("Applicaiton sent successfully.");
+            window.location.reload();
         }
     })
     .catch(error => {
         alert("Applicaiton not sent.");
     })
 
-    // window.location.reload();
     
 
 }
