@@ -100,6 +100,7 @@ $('.navbar-toggler-icon-line').on('click',function(){
     $('.marquee-line').addClass('none-display');
     $('.marquee-line-2').addClass('none-display');
     $('.arrow-div').addClass('none-display');
+    $('.elements-d').addClass('none-display');
     $('.navbar-toggler-icon-cross').addClass('remove-display-none');
 
     });
@@ -109,5 +110,6 @@ $('.navbar-toggler-icon-line').on('click',function(){
         $('.marquee-line').removeClass('none-display');
         $('.marquee-line-2').removeClass('none-display');
         $('.arrow-div').removeClass('none-display');
+        $('.elements-d').removeClass('none-display');
     });
 
