@@ -3538,11 +3538,11 @@
   }
 
   .play-close {
-    width: 100px;
-    height: 40px;
+    width: 90px;
+    height: 30px;
     position: absolute;
     right: 10px;
-    top: 620px;
+    top: 590px;
     border: none;
     outline: none;
     background: none;
@@ -3636,20 +3636,20 @@
   }
   .C-2-Video-logo {
     position: absolute;
-    top: 620px;
+    top: 580px;
     left: 20px;
     z-index: 1;
   }
   .video-logo-img-1 {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: absolute;
 
     z-index: 1;
   }
   .video-logo-img-2 {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     opacity: 0;
     z-index: 1;
