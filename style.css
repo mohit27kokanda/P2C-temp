@@ -1940,3 +1940,228 @@
     }
   }
 }
+
+/* **********************************************Small Mobile View *************************************************************************** */
+@media (min-width: 350px) and (max-width: 400px) {
+  .banner-content {
+    position: absolute;
+    top: 30%;
+    left: 30px;
+    cursor: default;
+  }
+  .banner-content-1 {
+    position: absolute;
+    top: 33%;
+    left: 30px;
+    cursor: default;
+  }
+  .f-2 {
+    font-size: 30px;
+  }
+  .f-2-1 {
+    font-size: 20px;
+  }
+  .f-3 {
+    font-size: 30px;
+  }
+  .f-3-1 {
+    font-size: 20px;
+  }
+  .f-5 {
+    font-size: 30px;
+  }
+  .f-4 {
+    font-size: 28px;
+  }
+  .f-4-1 {
+    font-size: 20px;
+  }
+  .f-5-1 {
+    font-size: 19px;
+  }
+  .c1-text-1 {
+    color: #000000;
+    /* font-family: monospace; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+    /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: 0.15em; Adjust as needed */
+    animation: typing-1 2s steps(30, end), blink-caret-1 0.5s step-end infinite;
+  }
+  .c1-text-2 {
+    color: #000000;
+    text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid #000000; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: 0.15em; Adjust as needed */
+    animation: typing-2 2.5s steps(30, end),
+      blink-caret-1 0.5s step-end infinite;
+    animation-delay: 2.5s;
+    opacity: 0;
+    /* margin-right: 20px; */
+  }
+  .c1-text-3 {
+    color: #000000;
+    /* text-align: start !important; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid #000000; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: 0.15em; Adjust as needed */
+    animation: typing-4 2.5s steps(30, end),
+      blink-caret-1 0.5s step-end infinite;
+    animation-delay: 2.5s;
+    opacity: 0;
+    /* margin-right: 20px; */
+  }
+  @keyframes typing-4 {
+    0% {
+      width: 0;
+      opacity: 1;
+    }
+    70%,
+    100% {
+      width: 58%;
+      opacity: 1;
+    }
+  }
+
+  .business-element {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    right: 40px;
+    bottom: 48px;
+
+    /* bottom: 0px !important; */
+  }
+  .business-large-skrew {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 240px;
+    bottom: 108px;
+
+    animation-name: rotate-circle;
+    animation-duration: 4s;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+
+    animation-iteration-count: infinite;
+  }
+  .business-small-skrew {
+    position: absolute;
+
+    width: 35px;
+    height: 35px;
+    right: 270px;
+    bottom: 148px;
+    animation-name: rotate-circle;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  /* idea arrow for mobile */
+  .arrow-div {
+    display: none;
+    /* position: absolute;
+    top: 490px;
+    right: 83px;
+    cursor: default;
+    width: 25px;
+    height: 8px;
+
+    z-index: 1 !important; */
+  }
+  .banner-heading-arrow {
+    display: none;
+    /* position: absolute;
+    cursor: default;
+    width: 20%;
+    height: 20%;
+    animation: size-increase;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 1 !important;
+    display: flex !important;
+    justify-content: flex-start;
+    overflow: hidden;
+    animation-direction: alternate; */
+  }
+
+  .marquee-line {
+    transform: rotateZ(155deg);
+    position: absolute;
+    width: 39px;
+    height: 50px;
+    top: 501px;
+    right: 107px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fc6c9c;
+  }
+
+  .marquee-line-2 {
+    transform: rotateZ(90deg);
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    top: 475px;
+    right: 87px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fc6c9c;
+  }
+
+  .legal-element-1 {
+    position: absolute;
+    bottom: 35px;
+    width: 320px;
+    height: 310px;
+    right: 40px;
+  }
+  .legal-element-scale {
+    position: absolute;
+    top: 150px;
+    width: 100px;
+    height: 340px;
+    left: 170px;
+    transform: rotateX(80deg);
+    animation-name: swing;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: ease-in-out;
+  }
+  .legal-element-right {
+    position: absolute;
+    width: 30px;
+    height: 45px;
+    top: 345px;
+    left: 240px;
+    animation-name: up-down-legal;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: ease-in-out;
+  }
+
+  .legal-element-left {
+    position: absolute;
+    width: 30px;
+    height: 45px;
+    top: 300px;
+    left: 160px;
+    animation-name: up-down-legal-left;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: ease-in-out;
+  }
+}
