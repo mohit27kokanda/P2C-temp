@@ -1435,7 +1435,7 @@
 
 /* *********************************************Landscape Mobile View***************************************************** */
 
-@media (min-width: 800px) and (max-width: 992px) {
+@media (min-width: 630px) and (max-width: 992px) {
   .prev,
   .next {
     cursor: pointer;
