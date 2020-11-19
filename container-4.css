@@ -3374,9 +3374,9 @@
   }
   .small-container-2 {
     /* overflow: hidden; */
-    margin-top: -80px;
+    margin-top: 40px;
     position: relative;
-    height: 200vh;
+    height: 220vh;
     width: 100%;
     top: 0%;
 
@@ -3405,7 +3405,7 @@
     text-align: center;
     height: 200px;
     top: 460px;
-    left: 180px;
+    left: 100px;
     width: 350px;
     color: black;
     /* border: 2px solid black; */
@@ -3422,7 +3422,7 @@
     top: 510px;
     left: 40px;
     width: 390px;
-    left: 180px;
+    left: 100px;
     color: black;
     animation-name: move-r-2-l-business;
     animation-duration: 5s;
@@ -3446,7 +3446,7 @@
     width: 350px;
     height: 350px;
     position: absolute;
-    left: 150px;
+    left: 100px;
     /* border: 10px solid rgb(233,107,86); */
     /* box-shadow: inset 15px 15px 15px 12px  rgba(228, 120, 240, 0.582); */
     border-radius: 50%;
@@ -3463,7 +3463,7 @@
     position: absolute;
     position: absolute;
     top: 100px;
-    left: 150px;
+    left: 100px;
 
     /* box-shadow: inset 15px 15px 15px 12px  rgba(228, 120, 240, 0.582); */
     border-radius: 50%;
@@ -3480,7 +3480,7 @@
     position: absolute;
     position: absolute;
     top: 140px;
-    left: 150px;
+    left: 100px;
     /* border: 10px solid  rgb(252, 218, 28); */
     /* box-shadow: inset 15px 15px 15px 12px  rgba(228, 120, 240, 0.582); */
     border-radius: 50%;
@@ -3503,7 +3503,7 @@
     position: absolute;
     position: absolute;
     top: 140px;
-    left: 150px;
+    left: 100px;
     /* border: 10px solid  rgb(252, 218, 28); */
     /* box-shadow: inset 15px 15px 15px 12px  rgba(228, 120, 240, 0.582); */
     border-radius: 50%;
@@ -3526,23 +3526,17 @@
   .img-circle-web {
     width: 350px;
     height: 350px;
-    /* border: 10px solid rgba(136, 4, 141, 0.514); */
   }
   .img-circle-div {
     width: 350px;
     height: 350px;
     position: absolute;
-
-    /* box-shadow: inset 15px 15px 15px 12px  rgba(228, 120, 240, 0.582); */
     border-radius: 50%;
-
     animation-name: move-l-2-r;
     animation-duration: 5s;
     transform: translateX(1800px);
     animation-fill-mode: forwards;
     transform: ease-in-out;
-
-    /* border: 10px solid rgba(136, 4, 141, 0.514); */
   }
 
   .small-circle-div {
@@ -3551,7 +3545,7 @@
     height: 50px;
     top: 714px;
     right: 70px;
-    left: 230px;
+    left: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3562,7 +3556,7 @@
     width: 300px;
     height: 50px;
     top: 740px;
-    left: 260px;
+    left: 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3675,7 +3669,7 @@
   .smallCircle-fixed {
     position: absolute;
 
-    margin-left: 170px;
+    margin-left: 90px;
     z-index: 1;
   }
   .smallCircle-fixed-1 {
@@ -3740,7 +3734,7 @@
     left: 160px;
   }
   .smallCircle-fixed-business {
-    margin-left: 180px;
+    margin-left: 100px;
     padding-bottom: 20px;
   }
 
@@ -3788,7 +3782,7 @@
     color: black;
     height: 150px;
     top: 40px;
-    left: 190px;
+    left: 120px;
     /* border: 2px solid black; */
     transform: rotate(-19deg);
     animation-duration: 1.5s;
@@ -3801,14 +3795,14 @@
     0% {
       position: absolute;
       top: 40px;
-      left: 190px;
+      left: 120px;
       transform: rotate(-19deg);
     }
 
     100% {
       position: absolute;
       top: 100px;
-      left: 280px;
+      left: 210px;
       transform: rotate(21deg);
     }
   }
@@ -3818,7 +3812,7 @@
     color: black;
     height: 150px;
     top: 55px;
-    left: 160px;
+    left: 100px;
     transform: rotate(-11deg);
     /* border: 2px solid black; */
     animation-duration: 1.5s;
@@ -3831,35 +3825,17 @@
     0% {
       position: absolute;
       top: 55px;
-      left: 160px;
+      left: 100px;
       transform: rotate(-11deg);
     }
     100% {
       position: absolute;
       top: 80px;
-      left: 260px;
+      left: 200px;
       transform: rotate(11deg);
     }
-    /* 100%{
-              position: absolute;
-              top: 380px;
-          right: 240px;
-              transform: rotate(250deg);
-          } */
   }
 
-  /* .h1Text{
-          font-size: 25px;
-          font-weight: 700;
-          letter-spacing: 12px;
-          padding-left: 20px;
-      }
-      .h2Text{
-          font-size: 25px;
-          font-weight: 700;
-          letter-spacing: 5px;
-          padding-left: 20px;
-      } */
   .imagePngBsiness {
     width: 300px;
     position: absolute;
